@@ -4,14 +4,13 @@ import { withRouter, NavLink, Route } from 'react-router-dom';
 import Search from '../Search/Search';
 import FormulaContainer from '../../components/FormulaContainer/FormulaContainer';
 import Calculate from '../Calculate/Calculate';
-import './Form.css';
+import './Form.css'; 
 
 class Form extends Component {
   render() {
     return (
-      <div className="form">
+      <div className="form-container links">
 				<NavLink to='/search'>search</NavLink>
-				<NavLink to='/calculate'>calculate</NavLink>
 				<NavLink to='/browse'>browse</NavLink>
       </div>
     );
