@@ -19,7 +19,7 @@ class Calculate extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className='form-container'>
 				<NavLink to='/search'>search</NavLink>
 				<NavLink to='/browse'>browse</NavLink>
 				<form className='search-field' onSubmit={this.handleSubmit}>
