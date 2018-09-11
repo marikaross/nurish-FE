@@ -11,13 +11,11 @@ import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
-const router = (
+
+ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </Provider>
-);
-
-ReactDOM.render(<App />, document.getElementById('root'));
+  </Provider>, document.getElementById('root'));
 registerServiceWorker();
