@@ -1,7 +1,7 @@
-const formulas = [
+export const formulas = [
   {
     "title": "Beneprotein",
-    "description": "Beneprotein instant protein powder is a modular whey protein source. Each 7 g serving provides 6 g of protein. It can be added to most foods, liquids and as a "protein flush" with tube feedings",
+    "description": 'Beneprotein instant protein powder is a modular whey protein source. Each 7 g serving provides 6 g of protein. It can be added to most foods, liquids, and as a "protein flush" with tube feedings',
     "usage": ["Increased protein requirements"],
     "ingredients": "WHEY PROTEIN ISOLATE (MILK), SOY LECITHIN",
     "HCPC": "B4155",
@@ -36,7 +36,7 @@ const formulas = [
     "description": "BOOST® High Protein is a great tasting, nutritionally complete formula with 15 g of protein per 237 ml that can be used as a snack or as a meal. For oral use",
     "usage": ["Chewing or swallowing difficulties", "Fluid or volume restrictions", "Poor appetite"],
     "ingredients": "WATER, CORN SYRUP, MODIFIED MILK INGREDIENTS, SUGAR, VEGETABLE OILS (CANOLA, HIGH OLEIC SUNFLOWER, CORN), SOY PROTEIN ISOLATE, SALT, VITAMINS (VITAMIN A PALMITATE, VITAMIN D3, DL-ALPHATOCOPHERYL ACETATE, SODIUM ASCORBATE, ASCORBIC ACID, THIAMINE HYDROCHLORIDE, RIBOFLAVIN, NIACIN, CALCIUM PANTOTHENATE, PYRIDOXINE HYDROCHLORIDE, BIOTIN, FOLIC ACID, CHOLINE BITARTRATE), MINERALS (POTASSIUM CITRATE, POTASSIUM HYDRATE, POTASSIUM CHLORIDE, TRICALCIUM PHOSPHATE, MAGNESIUM PHOSPHATE, MAGNESIUM CHLORIDE, FERROUS SULPHATE, ZINC SULPHATE, MANGANESE SULPHATE, COPPER SULPHATE, POTASSIUM IODIDE, SODIUM SELENITE, SODIUM MOLYBDATE, CHROMIUM TRICHLORIDE), ARTIFICIAL FLAVOUR, CELLULOSE GEL AND GUM, SOY LECITHIN, CARRAGEENAN, STEVIA EXTRACT, DIMETHYLPOLYSILOXANE. ",
-    "HCPC": "B4150"
+    "HCPC": "B4150",
     "restrictions": "CONTAINS MILK AND SOY"
   }
 ]
