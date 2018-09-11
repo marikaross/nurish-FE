@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">nurish</header>
+        <img src='images/nurish-logo.gif'/>
         <Route exact path='/' component={Form}/>
 				<Route path='/search' component={Search}/>
 				<Route exact path='/calculate' component={Calculate}/>
