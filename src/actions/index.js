@@ -1,4 +1,4 @@
 export const addFormulas = (formulas) => {
-  type: 'ADD_FORMULA',
+  type: 'ADD_FORMULAS',
   formulas
 }
