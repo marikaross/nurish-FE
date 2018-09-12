@@ -3,13 +3,14 @@
 }
 
 .form-container {
-	transition: all 0.5s ease;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
   height: 25vh;
   margin: 0 auto;
   min-width: 20rem;
+  padding: 1.5rem;
   text-align: center;
+  transition: width 1 ease;
   width: 25%; 
 }
 
@@ -19,15 +20,38 @@
   justify-content: space-evenly;
 }
 
+.links {
+  & a {
+    width: 75%;
+  }
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-container {
+  & a {
+    max-width: 10rem;
+    width: 30%;
+  }
+}
+
 a {
+  border-radius: 30px;
+  border: 1px solid #FFF;
   color: #FFF;
   font-size: 1.5rem;
-  text-decoration: none; 
+  margin: 0 auto;
+  padding: .75rem 0;
+  text-decoration: none;
 }
 
 img {
   margin: 25vh 0 5vh;
+  text-align: center; 
   width: 25rem;
-  text-align: center; }
+}
 
 
