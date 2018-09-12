@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
 export const FormulaCard = (formula) => {
@@ -17,4 +18,11 @@ export const FormulaCard = (formula) => {
       <h4>usage: {usageGuidelines()}</h4>
     </div>
     )
+}
+
+FormulaCard.propTypes = {
+  id: PropTypes.number,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  usage: PropTypes.array
 }
