@@ -6,6 +6,7 @@ import Search from '../Search/Search';
 import FormulaContainer from '../../components/FormulaContainer/FormulaContainer';
 import Calculate from '../Calculate/Calculate';
 import './App.css';
+import PropTypes from 'prop-types';
 
 class App extends Component {
   render() {
@@ -20,5 +21,9 @@ class App extends Component {
     );
   }
 }
+
+App.proptypes = {
+  formulas: PropTypes.array,
+};
 
 export default withRouter((App));
