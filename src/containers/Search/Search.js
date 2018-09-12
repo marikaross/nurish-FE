@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter, NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { Dropdown, Input, Button, Select } from 'semantic-ui-react';
 import './Search.css';
 

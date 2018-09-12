@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter, NavLink } from 'react-router-dom';
-
+import PropTypes from 'prop-types';
 
 class Calculate extends Component {
 	constructor() {
@@ -31,6 +31,10 @@ class Calculate extends Component {
 			</div>
 		)
 	}
+}
+
+Calculate.propTypes = {
+	
 }
 
 export default Calculate;
