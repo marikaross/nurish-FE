@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter, NavLink, Route } from 'react-router-dom';
 import Search from '../Search/Search';
-import FormulaContainer from '../../components/FormulaContainer/FormulaContainer';
+import FormulaContainer from '../FormulaContainer/FormulaContainer';
 import Calculate from '../Calculate/Calculate';
 import './Form.css'; 
 import PropTypes from 'prop-types';
