@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter, NavLink } from 'react-router-dom';
 import {formulas} from '../../data-helper/mockFormula.js';
-import {FormulaCard} from '../FormulaCard/FormulaCard';
+import {FormulaCard} from '../../components/FormulaCard/FormulaCard';
 import './FormulaContainer.css';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
