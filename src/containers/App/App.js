@@ -24,8 +24,8 @@ class App extends Component {
   }
 }
 
-App.proptypes = {
-  formulas: PropTypes.array,
-};
+// App.proptypes = {
+//   formulas: PropTypes.array,
+// };
 
 export default withRouter((App));
