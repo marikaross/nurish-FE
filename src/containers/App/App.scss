@@ -31,16 +31,21 @@
   justify-content: space-between;
 }
 
+.link-container {
+  & a {
+    max-width: 10rem;
+    width: 30%;
+  }
+}
+
 a {
   border-radius: 30px;
   border: 1px solid #FFF;
   color: #FFF;
   font-size: 1.5rem;
   margin: 0 auto;
-  max-width: 10rem;
   padding: .75rem 0;
   text-decoration: none;
-  width: 30%;
 }
 
 img {
