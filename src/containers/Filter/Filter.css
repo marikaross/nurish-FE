@@ -1,0 +1,24 @@
+div .filter-container {
+  width: 45%;
+  height: 35vh;
+  animation: grow-filter 1s; }
+
+@keyframes grow-filter {
+  0% {
+    width: 25%; }
+  100% {
+    width: 45%; } }
+
+.filter-form {
+  margin: 1rem auto;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 270px; }
+
+.filter-form div {
+  width: 100%; }
+
+.filter-form .button {
+  background-color: #FFF; }
