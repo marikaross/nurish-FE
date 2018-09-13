@@ -1,36 +1,36 @@
+
 div {
 	& .search-container {
-		width: 45%;
-		animation: grow-search 1s;
-
-		@keyframes grow-search {
-  
-	  	0% {
-	  	  width: 25%;
-	  	}
+			animation: grow-search 1s;
+			width: 45%;
+			@keyframes grow-search {
 	  
-	  	100% {
-	    	width: 45%;
-	  	}
-		}
+		  	0% {
+		  		width: 25%;
+		  	}
+		  
+		  	100% {
+		    	width: 45%;
+		  	}
+			}
 	}	
 }
 
 .search-field {
-	margin: 1rem auto;
-	width: 95%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
 	height: 150px;
+	justify-content: space-evenly;
+	margin: 1rem auto;
+	width: 95%;
 }
 
 .search-field {
 	& .ui {
 		& .button {
 			background-color: #FFF;
-			border: 1px solid rgba(34, 36, 38, .15);
 			border-style: solid solid solid none;
+			border: 1px solid rgba(34, 36, 38, .15);
 		}
 	}
 }

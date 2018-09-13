@@ -4,15 +4,25 @@ body {
   font-family: 'Avenir', sans-serif;
 
   background: linear-gradient(216deg, #f89838, #f0586e);
-	background-size: 400% 400%;
-	-webkit-animation: hue 10s infinite linear;
-}
+  background-size: 400% 400%;
 
-@-webkit-keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
+  -webkit-animation: animate-gradient 1ms ease infinite;
+  -moz-animation: animate-gradient 1ms ease infinite;
+  animation: animate-gradient 1ms ease infinite;
+
+  @-webkit-keyframes animate-gradient {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
   }
-  to {
-    -webkit-filter: hue-rotate(-360deg);
+  @-moz-keyframes animate-gradient {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes animate-gradient { 
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
   }
 }

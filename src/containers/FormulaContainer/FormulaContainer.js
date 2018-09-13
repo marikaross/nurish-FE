@@ -31,7 +31,9 @@ export class FormulaContainer extends Component{
   			  <NavLink to='/search'>search</NavLink>
           <NavLink to='/filter'>filter</NavLink>
         </div>
-        {this.FormulaCards()}
+        <div className='formula-cards'>
+          {this.FormulaCards()}
+        </div>
   		</div>
   	)
   }
