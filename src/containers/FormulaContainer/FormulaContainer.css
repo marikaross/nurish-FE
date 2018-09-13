@@ -1,14 +1,18 @@
-.formula-container {
-  width: 50%;
+.formula-cards {
+  margin: 2rem auto;
+  width: 95%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
 
 div .formula-container {
-  width: 85%;
-  animation: grow 1s; }
+  height: fit-content;
+  margin: 0 auto 5rem;
+  animation: grow-container 1s;
+  width: 85%; }
 
-@keyframes grow {
+@keyframes grow-container {
   0% {
     width: 25%; }
   100% {
