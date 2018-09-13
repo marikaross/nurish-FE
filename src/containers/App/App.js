@@ -12,8 +12,8 @@ import PropTypes from 'prop-types';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <img src='images/nurish-logo.gif'/>
+      <div className='app'>
+        <img className='nurish-logo' src='images/nurish-logo.gif'/>
         <Route exact path='/' component={Form}/>
         <Route path='/filter' component={Filter}/>
 				<Route path='/search' component={Search}/>
