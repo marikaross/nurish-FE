@@ -1,21 +1,22 @@
 div .filter-container {
-  width: 45%;
+  animation: grow-filter 1s;
   height: 35vh;
-  animation: grow-filter 1s; }
+  width: 45%; }
 
 @keyframes grow-filter {
   0% {
     width: 25%; }
   100% {
-    width: 45%; } }
+    width: 45%;
+    height: 35vh; } }
 
 .filter-form {
-  margin: 1rem auto;
-  width: 95%;
   display: flex;
   flex-direction: column;
+  height: 270px;
   justify-content: space-evenly;
-  height: 270px; }
+  margin: 1rem auto;
+  width: 95%; }
 
 .filter-form div {
   width: 100%; }
