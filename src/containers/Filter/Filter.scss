@@ -1,9 +1,8 @@
 div {
 	& .filter-container {
-		width: 45%;
-		height: 35vh;
 		animation: grow-filter 1s;
-
+		height: 35vh;
+		width: 45%;
 		@keyframes grow-filter {
   
 	  	0% {
@@ -12,18 +11,19 @@ div {
 	  
 	  	100% {
 	    	width: 45%;
+	    	height: 35vh;
 	  	}
 		}
 	}	
 }
 
 .filter-form {
-	margin: 1rem auto;
-	width: 95%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
 	height: 270px;
+	justify-content: space-evenly;
+	margin: 1rem auto;
+	width: 95%;
 }
 
 .filter-form {
