@@ -19,6 +19,16 @@ class App extends Component {
 				<Route path='/search' component={Search}/>
 				<Route path='/calculate' component={Calculate}/>
 				<Route path='/browse' component={FormulaContainer}/>
+        <Route exact path='/:id' render={({match}) => {
+          const oneFormula = this.props.formulas.filter(formula => {
+            return formula.id === match.params.id
+          });
+          return (
+            <div>
+              <SingleCard {...oneFormula} />
+            </div>
+            )
+        }} />
       </div>
     );
   }
