@@ -16,13 +16,18 @@ class Search extends Component {
 		super()
 
 		this.state = {
-			input: ''
+			input: '',
+			criteria: ''
 		}
 	}
 
 	handleSubmit = (event) => {
 		event.preventDefault()
-		console.log(event)
+		console.log(this.state.input, this.state.criteria)
+	}
+
+	handleChange = (input) => {
+		this.setState({input})
 	}
 
 
@@ -35,9 +40,13 @@ class Search extends Component {
 					<NavLink to='/browse'>browse</NavLink>
 				</div>
 				<form className='search-field' onSubmit={this.handleSubmit}>
-				  <Input type='text' placeholder='enter your criteria' action>
-				    <input />
-				    <Select compact options={options} defaultValue='name' />
+				  <Input 
+				  	type='text'
+				  	placeholder='enter your criteria' 
+				  	onChange={event => this.handleChange(event.target.value)}
+				  	action >
+				    <input value={this.state.value}/>
+				    <Select compact options={options} defaultValue='name' value={this.state.criteria}/>
 				    <Button type='submit'>Search</Button>
 				  </Input>
 				</form>
