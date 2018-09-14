@@ -5,9 +5,12 @@ import Form from '../Form/Form';
 import Search from '../Search/Search';
 import FormulaContainer from '../FormulaContainer/FormulaContainer';
 import Calculate from '../Calculate/Calculate';
+import SingleCard from '../../components/SingleCard/SingleCard';
 import Filter from '../Filter/Filter';
 import './App.css';
 import PropTypes from 'prop-types';
+
+import { formulas } from '../../data-helper/mockFormula'
 
 class App extends Component {
   render() {
@@ -15,20 +18,20 @@ class App extends Component {
       <div className='app'>
         <img className='nurish-logo' src='images/nurish-logo.gif'/>
         <Route exact path='/' component={Form}/>
-        <Route path='/filter' component={Filter}/>
-				<Route path='/search' component={Search}/>
-				<Route path='/calculate' component={Calculate}/>
-				<Route path='/browse' component={FormulaContainer}/>
+        <Route exact path='/filter' component={Filter}/>
+				<Route exact path='/search' component={Search}/>
+				<Route exact path='/calculate' component={Calculate}/>
+				<Route exact path='/browse' component={FormulaContainer}/>
         <Route exact path='/:id' render={({match}) => {
-          const oneFormula = this.props.formulas.filter(formula => {
+          const formula = formulas.filter(formula => {
             return formula.id === match.params.id
           });
           return (
             <div>
-              <SingleCard {...oneFormula} />
+              <SingleCard {...formula} />
             </div>
-            )
-        }} />
+          );
+        }}/>
       </div>
     );
   }
