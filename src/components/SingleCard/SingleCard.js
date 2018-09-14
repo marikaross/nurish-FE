@@ -1,4 +1,5 @@
 import React from 'react';
+import './SingleCard.css'
 
 let formula = {
 	usage: ['like', 'eating', 'dear, god', 'let this be over']
@@ -107,8 +108,8 @@ const SingleCard = () => {
 
   return (
     <div className='single-card'>
-    	<h1>{title}</h1>
-    	<img src='https://github.com/jeremiahjstanley/pattrn-party/blob/master/css-resources/placeholder.png?raw=true'/>
+    	<h1 className='formula-title'>{title}</h1>
+    	<img className='formula-image' src='https://github.com/jeremiahjstanley/pattrn-party/blob/master/css-resources/placeholder.png?raw=true'/>
     	<p className='single-formula-description'>
     		{description}
     	</p>
@@ -121,7 +122,7 @@ const SingleCard = () => {
 			<h2 className='features-header'>
 				features at a glance:
 			</h2>
-			<ul>
+			<ul className='features-table'>
 				{featuresTable()}
 			</ul>
 			<h2 className='nutritional-information-header'>
