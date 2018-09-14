@@ -16,16 +16,14 @@ class App extends Component {
   render() {
     return (
       <div className='app'>
-        <img className='nurish-logo' src='images/nurish-logo.gif'/>
+        <img className='nurish-logo collapse-logo' src='/images/nurish-logo.gif'/>
         <Route exact path='/' component={Form}/>
         <Route exact path='/filter' component={Filter}/>
 				<Route exact path='/search' component={Search}/>
 				<Route exact path='/calculate' component={Calculate}/>
 				<Route exact path='/browse' component={FormulaContainer}/>
-        <Route exact path='/:id' render={({match}) => {
-          const formula = formulas.filter(formula => {
-            return formula.id === match.params.id
-          });
+        <Route exact path='/browse/:id' render={({ match }) => {
+          const formula = formulas.find(formula => formula.id == match.params.id);
           return (
             <div>
               <SingleCard {...formula} />
