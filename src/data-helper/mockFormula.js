@@ -1,5 +1,6 @@
 export const formulas = [
   {
+    "id": 1,
     "title": "Beneprotein",
     "description": 'Beneprotein instant protein powder is a modular whey protein source. Each 7 g serving provides 6 g of protein. It can be added to most foods, liquids, and as a "protein flush" with tube feedings',
     "usage": ["Increased protein requirements"],
@@ -8,6 +9,7 @@ export const formulas = [
     "restrictions": ["CONTAINS MILK AND SOY"]
   },
   {
+    "id": 2,
     "title": "BOOST Original",
     "description": "BOOST Original is a great tasting, nutritionally complete, meal replacement that can be used as a snack or as a meal. No artificial flavours or colours. Natural source sweetener. For oral use. ",
     "usage": ["Poor appetite", "Involuntary weight loss", "Malnutrition", "Reduced intake when recovering from illness or surgery", "Reduced intake during and after cancer treatment", "Reduced intake after oral surgery"],
@@ -16,6 +18,7 @@ export const formulas = [
     "restrictions": []
   },
   {
+    "id": 3,
     "title": "BOOST Powder",
     "description": "BOOST Powder is a great tasting option, when mixed with milk or in smoothies, that provides a source of protein and other vitamins and minerals. It can be used with snacks or meals. For oral use",
     "usage": ["Skipped breakfast meal", " Inadequate oral intake"],
@@ -23,7 +26,8 @@ export const formulas = [
     "HCPC": "",
     "restrictions": ["CONTAINS MILK", "MAY CONTAIN SOY AND WHEAT"]
   },
-  {
+  { 
+    "id": 4,
     "title": "BOOST DIABETIC",
     "description": "BOOST Diabetic is a great tasting, nutritionally complete formula designed to meet the needs of people with diabetes. A unique and calorically balanced blend of protein, fat and carbohydrates. Provides 17 g of carbohydrate per serving. For oral use.",
     "usage": ["Diabetes", "Hyperglycemia", "Glucose intolerance"],
@@ -31,7 +35,8 @@ export const formulas = [
     "HCPC": "B4154",
     "restrictions": ["CONTAINS MILK AND SOY"]
   },
-  {
+  { 
+    "id": 5,
     "title": "BOOST HIGH PROTEIN",
     "description": "BOOST® High Protein is a great tasting, nutritionally complete formula with 15 g of protein per 237 ml that can be used as a snack or as a meal. For oral use",
     "usage": ["Chewing or swallowing difficulties", "Fluid or volume restrictions", "Poor appetite"],
