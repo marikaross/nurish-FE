@@ -5,7 +5,8 @@ import { Dropdown, Input, Button } from 'semantic-ui-react';
 import './Filter.css'
 
 const specialties = [{ key: 'VHP', value: 'High Protein', text: 'Very High Protein (VHP)'}]
-const allergies = [{ key: 'Gluten', value: 'Wheat', text: 'Wheat and/or Gluten'}]
+const allergies = [{ key: 'Gluten', value: 'Wheat', text: 'Wheat and/or Gluten'},
+{ key: 'Corn', value: 'Corn', text: 'Corn'}]
 
 class Filter extends Component {
 	constructor() {
@@ -21,6 +22,9 @@ class Filter extends Component {
 		console.log('potato')
 	}
 
+	handleChange = (data) => {
+		console.log(data)
+	}
 
 	render() {
 		return (
@@ -32,7 +36,7 @@ class Filter extends Component {
 				</div>
 				<form className='filter-form' onSubmit={this.handleSubmit}>
 				<Dropdown placeholder='specialty' fluid multiple search selection options={specialties} />
-				<Dropdown placeholder='allergies' fluid multiple search selection options={allergies} />
+				<Dropdown onChange={data => this.handleChange(data)} placeholder='allergies' fluid multiple search selection options={allergies} />
 				<Input list='mct splits' placeholder='mct split' />
     			<datalist id='mct splits'>
       			<option value='50:10:40' />
