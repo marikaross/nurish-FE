@@ -17,7 +17,7 @@ describe('formulaReducer', () => {
     expect(result).toEqual(expected)
   })
 
-  it('should return the formulas state when the type is FORMULA_FETCH_DATA_SUCCESS', () => {
+  it('should return the formulas state when the type is FORMULA_FETCH_DATA_SUCCESS', async () => {
     const initialState = []
     const formulas = [{name: 'Boost Pudding'}]
     const expected = [...formulas]
