@@ -1,5 +1,5 @@
 import React from 'react';
-import './SingleCard.css'
+import './SingleCard.css';
 
 let formula = {
 	usage: ['like', 'eating', 'dear, god', 'let this be over']
