@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import './FormulaCard.css'
+import './FormulaCard.css';
 
 
 export const FormulaCard = (formula) => {
@@ -9,10 +9,11 @@ export const FormulaCard = (formula) => {
   const usageGuidelines = () => {
     return formula.usage.map(usage => {
       return (
-          <h5>{usage}</h5>
-        )
-    })
-  }
+        <h5 key={formula.id}>{usage}</h5>
+      );
+    });
+  };
+  
   return (
     <div className='formula-card' key={formula.id}>
       <Link to={`/browse/${formula.id}`}>
@@ -21,12 +22,12 @@ export const FormulaCard = (formula) => {
         <h4>usage: {usageGuidelines()}</h4>
       </Link>
     </div>
-    )
-}
+  );
+};
 
 FormulaCard.propTypes = {
   id: PropTypes.number,
   title: PropTypes.string,
   description: PropTypes.string,
   usage: PropTypes.array
-}
+};
