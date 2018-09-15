@@ -11,9 +11,8 @@ export class FormulaContainer extends Component{
 
 
   FormulaCards = () => {
-    console.log(formulas)
 
-    return formulas.map(formula => {
+    return this.props.formulas.map(formula => {
       return (
         <FormulaCard
           key={formula.id}
