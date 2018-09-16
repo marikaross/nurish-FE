@@ -4,7 +4,7 @@ export const formulaCleaner = (formulaData) => {
             id: formula.id,
             name: formula.title,
             description: formula.description,
-            usage: [formula.usage]
+            usage: formula.usage
           }
   })
 }
