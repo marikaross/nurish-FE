@@ -13,7 +13,8 @@ class Filter extends Component {
 		super()
 
 		this.state = {
-			input: ''
+			input: '',
+			allergens: []
 		}
 	}
 
@@ -22,11 +23,12 @@ class Filter extends Component {
 		console.log('potato')
 	}
 
-	handleChange = (data) => {
-		console.log(data)
+	handleChange = (event, data) => {
+		this.setState({ allergens: [...data.value]})		
 	}
 
 	render() {
+		const { value } = this.state
 		return (
 			<div className='form-container filter-container'>
 				<div className='link-container'>
@@ -36,7 +38,7 @@ class Filter extends Component {
 				</div>
 				<form className='filter-form' onSubmit={this.handleSubmit}>
 				<Dropdown placeholder='specialty' fluid multiple search selection options={specialties} />
-				<Dropdown onChange={data => this.handleChange(data)} placeholder='allergies' fluid multiple search selection options={allergies} />
+				<Dropdown onChange={this.handleChange} placeholder='allergies' fluid multiple search selection options={allergies}/>
 				<Input list='mct splits' placeholder='mct split' />
     			<datalist id='mct splits'>
       			<option value='50:10:40' />
