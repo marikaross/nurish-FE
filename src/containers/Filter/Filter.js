@@ -23,14 +23,24 @@ class Filter extends Component {
 	handleSubmit = async (event) => {
 		event.preventDefault()
 		const allergens = await this.filterAllergens()
-		const specilty = await this.filterSpecialty()
+		const specialty = await this.filterSpecialty()
 		const mct = await this.filterMCT()
+		this.compareFilter(allergens, specialty, mct)
 	}
 
 	handleChange = (event, data) => {
+
 		event.preventDefault()
 		this.setState({ allergens: [...data.value]})
+		console.log(this.state.allergens)
 	}
+
+	compareFilter = (allergens = [], specialty = [], mct = []) => {
+		switch (allergens) {
+			case allergens.length:
+
+		}
+ }
 
 	filterAllergens = async () => {
 		let urlParam = this.state.allergens.join()	
@@ -63,7 +73,7 @@ class Filter extends Component {
 					<NavLink to='/browse'>browse</NavLink>
 				</div>
 				<form className='filter-form' onSubmit={this.handleSubmit}>
-				<Dropdown placeholder='specialty' fluid multiple search selection options={specialties} />
+				<Dropdown onChange={this.handleChange} placeholder='specialty' fluid search selection options={specialties} name="specialty" />
 				<Dropdown onChange={this.handleChange} placeholder='allergies' fluid multiple search selection options={allergies}/>
 				<Input list='mct splits' placeholder='mct split' />
     			<datalist id='mct splits'>
