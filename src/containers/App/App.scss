@@ -65,16 +65,19 @@ a {
 }
 
 .nurish-logo {
-  margin: 25vh 0 5vh;
   text-align: center; 
   width: 25rem;
 }
 
+.initial-logo {
+  margin: 25vh 0 5vh;
+}
+
 .collapse-logo {
   margin: 0 0 5vh;
-  animation: move-logo 1s;
+  animation: collapse-logo 1s;
 
-  @keyframes move-logo {
+  @keyframes collapse-logo {
 
     0% {
       margin: 25vh 0 5vh;
@@ -82,6 +85,22 @@ a {
         
     100% {
       margin: 0 0 5vh;
+    }
+  } 
+}
+
+.expand-logo {
+  margin: 25vh 0 5vh;
+  animation: expand-logo 1s;
+
+  @keyframes expand-logo {
+
+    0% {
+      margin: 0 0 5vh;
+    }
+        
+    100% {
+      margin: 25vh 0 5vh;
     }
   } 
 }
