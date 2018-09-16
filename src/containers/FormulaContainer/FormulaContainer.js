@@ -11,9 +11,8 @@ export class FormulaContainer extends Component{
 
 
   FormulaCards = () => {
-    console.log(formulas)
 
-    return formulas.map(formula => {
+    return this.props.formulas.map(formula => {
       return (
         <FormulaCard
           key={formula.id}
@@ -39,8 +38,8 @@ export class FormulaContainer extends Component{
   }
 }
 
-export const mapStateToProps = (state) => {
+export const mapStateToProps = (state) => ({
   formulas: state.formulas
-}
+})
 
 export default withRouter(connect(mapStateToProps, null)(FormulaContainer));

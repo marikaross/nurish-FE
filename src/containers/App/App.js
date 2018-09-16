@@ -1,18 +1,25 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter, NavLink, Route } from 'react-router-dom';
+import { withRouter, Route } from 'react-router-dom';
 import Form from '../Form/Form';
 import Search from '../Search/Search';
 import FormulaContainer from '../FormulaContainer/FormulaContainer';
 import Calculate from '../Calculate/Calculate';
-import SingleCard from '../../components/SingleCard/SingleCard';
+import DetailsCard from '../../components/DetailsCard/DetailsCard';
 import Filter from '../Filter/Filter';
 import './App.css';
 import PropTypes from 'prop-types';
+import { addFormulas } from '../../actions';
+import { fetchFormula } from '../../thunks/fetchFormula.js';
 
-import { formulas } from '../../data-helper/mockFormula'
 
 class App extends Component {
+
+  async componentDidMount() {
+    const url = `https://nurish-app.herokuapp.com/api/v1/formulas`;
+    await this.props.fetchFormula(url);
+  }
+
   render() {
     return (
       <div className='app'>
@@ -23,10 +30,10 @@ class App extends Component {
 				<Route exact path='/calculate' component={Calculate}/>
 				<Route exact path='/browse' component={FormulaContainer}/>
         <Route exact path='/browse/:id' render={({ match }) => {
-          const formula = formulas.find(formula => formula.id == match.params.id);
+          const formula = this.props.formulas.find(formula => formula.id === match.params.id);
           return (
             <div>
-              <SingleCard {...formula} />
+              <DetailsCard {...formula} />
             </div>
           );
         }}/>
@@ -35,8 +42,21 @@ class App extends Component {
   }
 }
 
-// App.proptypes = {
-//   formulas: PropTypes.array,
-// };
 
-export default withRouter((App));
+export const mapStateToProps = (state) => ({
+  formulas: state.formulas,
+  isLoading: state.isLoading,
+  hasErrored: state.hasErrored
+});
+
+export const mapDispatchToProps = (dispatch) => ({
+  addFormulas: (formulas) => dispatch(addFormulas(formulas)),
+  fetchFormula: (url) => dispatch(fetchFormula(url))
+});
+
+App.propTypes = {
+  formulas: PropTypes.array,
+  fetchFormula: PropTypes.func,
+  formula: PropTypes.func
+};
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
