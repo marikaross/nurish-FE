@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter, NavLink, Route } from 'react-router-dom';
+import { withRouter, Route } from 'react-router-dom';
 import Form from '../Form/Form';
 import Search from '../Search/Search';
 import FormulaContainer from '../FormulaContainer/FormulaContainer';
@@ -10,16 +10,15 @@ import Filter from '../Filter/Filter';
 import './App.css';
 import PropTypes from 'prop-types';
 import { addFormulas } from '../../actions';
-import { fetchFormula } from '../../thunks/fetchFormula.js'
+import { fetchFormula } from '../../thunks/fetchFormula.js';
 
 
 class App extends Component {
 
   async componentDidMount() {
-    const url = `https://nurish-app.herokuapp.com/api/v1/formulas`
+    const url = `https://nurish-app.herokuapp.com/api/v1/formulas`;
     await this.props.fetchFormula(url);
-    console.log(this.props.formulas)
-  }
+  };
 
   render() {
     return (
@@ -31,7 +30,7 @@ class App extends Component {
 				<Route exact path='/calculate' component={Calculate}/>
 				<Route exact path='/browse' component={FormulaContainer}/>
         <Route exact path='/browse/:id' render={({ match }) => {
-          const formula = this.props.formulas.find(formula => formula.id == match.params.id);
+          const formula = this.props.formulas.find(formula => formula.id === match.params.id);
           return (
             <div>
               <SingleCard {...formula} />
@@ -48,14 +47,16 @@ export const mapStateToProps = (state) => ({
   formulas: state.formulas,
   isLoading: state.isLoading,
   hasErrored: state.hasErrored
-})
+});
 
 export const mapDispatchToProps = (dispatch) => ({
   addFormulas: (formulas) => dispatch(addFormulas(formulas)),
   fetchFormula: (url) => dispatch(fetchFormula(url))
-})
+});
 
 App.proptypes = {
   formulas: PropTypes.array,
+  fetchFormula: PropTypes.func,
+  formulas.fin: PropTypes.func,
 };
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
