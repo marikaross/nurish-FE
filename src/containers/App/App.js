@@ -12,28 +12,49 @@ import PropTypes from 'prop-types';
 import { addFormulas } from '../../actions';
 import { fetchFormula } from '../../thunks/fetchFormula.js';
 
-
 class App extends Component {
+  constructor() {
+    super()
+
+      this.state = {
+        position: 'initial-logo'
+      }
+  }
 
   async componentDidMount() {
     const url = `https://nurish-app.herokuapp.com/api/v1/formulas`;
     await this.props.fetchFormula(url);
   }
 
+  animateLogo = (position) => {
+    console.log(position)
+    switch (position) {
+      case 'collapse-logo':
+        this.setState({position})
+        break;
+      case 'expand-logo':
+        this.setState({position})
+        break;
+      default:
+        this.setState({position: 'expand-logo'})
+    }
+  }
+
   render() {
+    const classes = `nurish-logo ${this.state.position}`
     return (
       <div className='app'>
-        <img className='nurish-logo collapse-logo' src='/images/nurish-logo.gif'/>
+        <img className={classes} src='/images/nurish-logo.gif'/>
         <Route exact path='/' component={Form}/>
         <Route exact path='/filter' component={Filter}/>
 				<Route exact path='/search' component={Search}/>
 				<Route exact path='/calculate' component={Calculate}/>
-				<Route exact path='/browse' component={FormulaContainer}/>
+				<Route exact path='/browse' render={() => <FormulaContainer animateLogo={this.animateLogo} />}/>
         <Route exact path='/browse/:id' render={({ match }) => {
           const formula = this.props.formulas.find(formula => formula.id === match.params.id);
           return (
             <div>
-              <DetailsCard {...formula} />
+              <DetailsCard {...formula} animateLogo={this.animateLogo}/>
             </div>
           );
         }}/>
@@ -41,7 +62,6 @@ class App extends Component {
     );
   }
 }
-
 
 export const mapStateToProps = (state) => ({
   formulas: state.formulas,
