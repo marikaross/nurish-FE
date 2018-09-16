@@ -18,7 +18,7 @@ class App extends Component {
   async componentDidMount() {
     const url = `https://nurish-app.herokuapp.com/api/v1/formulas`;
     await this.props.fetchFormula(url);
-  };
+  }
 
   render() {
     return (
@@ -54,9 +54,9 @@ export const mapDispatchToProps = (dispatch) => ({
   fetchFormula: (url) => dispatch(fetchFormula(url))
 });
 
-App.proptypes = {
+App.propTypes = {
   formulas: PropTypes.array,
   fetchFormula: PropTypes.func,
-  formulas.find: PropTypes.func,
+  formula: PropTypes.func
 };
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
