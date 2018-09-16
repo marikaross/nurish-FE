@@ -3,10 +3,10 @@
 	background-color: rgba(255, 255, 255, 0.2);
 	display: grid;
 	grid-template-columns: 50% 50%;
-	grid-auto-flow: dense;
-	width: 60%;
+	grid-auto-flow: column;
+	width: 65%;
   border-radius: 30px;
-  margin: 0 auto;
+  margin: 0 auto 6rem;
   min-width: 20rem;
   padding: 1.5rem;
   color: #FFF;
@@ -22,6 +22,8 @@
 .formula-title {
 	grid-column: 1;
 	text-transform: lowercase;
+	align-self: center;
+	margin: .25rem;
 	font-size: 1.5rem;
 }
 
@@ -52,7 +54,9 @@
 }
 
 .nutritional-information-header {
+	align-self: center;
 	grid-column: 2;
+	margin: .25rem;
 	grid-row: 1;
 }
 
@@ -63,5 +67,6 @@
 
 .ingredients-text {
 	grid-column: 2;
-	grid-row: 3;
+	grid-row: 3 / 8;
+	text-transform: lowercase;
 }
