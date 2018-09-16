@@ -33,7 +33,6 @@ class Search extends Component {
 		this.setState({input})
 	}
 
-
 	render() {		
 		return (
 			<div className='form-container search-container'>
@@ -43,14 +42,14 @@ class Search extends Component {
 					<NavLink to='/browse'>browse</NavLink>
 				</div>
 				<form className='search-field' onSubmit={this.handleSubmit}>
-				  <Input 
+					<Input 
 				  	type='text'
 				  	placeholder='enter your criteria' 
 				  	action >
-				    <input onChange={(event) => this.handleInput(event.target.value)} value={this.state.value} name='input'/>
-				    <Select onChange={this.handleChange} compact options={options} name='criteria'/>
-				    <Button type='submit'>Search</Button>
-				  </Input>
+				  	<input onChange={(event) => this.handleInput(event.target.value)} value={this.state.value} name='input'/>
+				  	<Select onChange={this.handleChange} defaultValue={'name'} compact options={options} name='criteria'/>
+				  	<Button type='submit'>Search</Button>
+					</Input>
 				</form>
 			</div>
 		)
