@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './DetailsCard.css';
 
 let formula = {
@@ -53,9 +53,17 @@ let nutritionalContent= {
   "Serving size": "* 1 scoop or packet"
 };
 
-const DetailsCard = () => {
+class DetailsCard extends Component {
+
+  componentDidMount() {
+    this.props.animateLogo('collapse-logo')
+  }
+
+  componentWillUnmount() {
+    this.props.animateLogo('expand-logo')
+  }
 	
-	const usageGuidelines = () => {
+	usageGuidelines = () => {
     return formula.usage.map(use => {
       return (
           <li>{use}</li>
@@ -63,7 +71,7 @@ const DetailsCard = () => {
     });
   };
 
-  const featuresTable = () => {
+  featuresTable = () => {
 		return Object.keys(features).map(feature => {
 			return (
 				<li>{feature}: {features[feature]}</li>
@@ -71,7 +79,7 @@ const DetailsCard = () => {
 		});
   };
 
-  const nutritionalHeaders = () => {
+  nutritionalHeaders = () => {
   	let nutrients = Object.keys(nutritionalContent);
   	let headers = Object.keys(nutritionalContent[nutrients[0]])
   	return headers.map(nutrientHeader => {
@@ -81,7 +89,7 @@ const DetailsCard = () => {
   	});
   };
 
-  const nutritionalTable = () => {
+  nutritionalTable = () => {
   	return Object.keys(nutritionalContent).map(nutrient => {
   		if (typeof nutritionalContent[nutrient] === 'object') {
 	  		var content = Object.keys(nutritionalContent[nutrient]).map(unit => {
@@ -106,37 +114,39 @@ const DetailsCard = () => {
   	});
   };
 
-  return (
-    <div className='single-card'>
-    	<h1 className='formula-title'>{title}</h1>
-    	<img className='formula-image' src='https://github.com/jeremiahjstanley/pattrn-party/blob/master/css-resources/placeholder.png?raw=true'/>
-    	<p className='single-formula-description'>
-    		{description}
-    	</p>
-    	<h2 className='nutritional-management-header'>
-    		for the nutritional management of:
-    	</h2>
-    	<ul className='usage-guidelines'>
-    		{usageGuidelines()}
-			</ul>
-			<h2 className='features-header'>
-				features at a glance:
-			</h2>
-			<ul className='features-table'>
-				{featuresTable()}
-			</ul>
-			<h2 className='nutritional-information-header'>
-				nutritional information:
-			</h2>
-			<ul className='nutritional-information'>
-				 <span className='nutrient-headers'>{nutritionalHeaders()}</span>
-				{nutritionalTable()}
-			</ul>
-			<p className='ingredients-text'><span className='ingredients-title'>ingredients:</span>
-				{ingredients}
-			</p>
-    </div>
-  );
+  render() {
+    return (
+      <div className='single-card'>
+      	<h1 className='formula-title'>{title}</h1>
+      	<img className='formula-image' src='https://github.com/jeremiahjstanley/pattrn-party/blob/master/css-resources/placeholder.png?raw=true'/>
+      	<p className='single-formula-description'>
+      		{description}
+      	</p>
+      	<h2 className='nutritional-management-header'>
+      		for the nutritional management of:
+      	</h2>
+      	<ul className='usage-guidelines'>
+      		{this.usageGuidelines()}
+  			</ul>
+  			<h2 className='features-header'>
+  				features at a glance:
+  			</h2>
+  			<ul className='features-table'>
+  				{this.featuresTable()}
+  			</ul>
+  			<h2 className='nutritional-information-header'>
+  				nutritional information:
+  			</h2>
+  			<ul className='nutritional-information'>
+  				 <span className='nutrient-headers'>{this.nutritionalHeaders()}</span>
+  				{this.nutritionalTable()}
+  			</ul>
+  			<p className='ingredients-text'><span className='ingredients-title'>ingredients:</span>
+  				{ingredients}
+  			</p>
+      </div>
+    ); 
+  }
 };
 
 export default DetailsCard;
