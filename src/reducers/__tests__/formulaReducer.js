@@ -22,7 +22,7 @@ describe('formulaReducer', () => {
     const formulas = [{name: 'Boost Pudding'}];
     const expected = [...formulas];
     const result = await formulaReducer(initialState, action.formulaFetchDataSuccess(formulas));
-    expect(result.toEqual(expected));
+    expect(result).toEqual(expected);
   });
 });
 
