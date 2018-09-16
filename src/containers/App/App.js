@@ -5,7 +5,7 @@ import Form from '../Form/Form';
 import Search from '../Search/Search';
 import FormulaContainer from '../FormulaContainer/FormulaContainer';
 import Calculate from '../Calculate/Calculate';
-import SingleCard from '../../components/SingleCard/SingleCard';
+import DetailsCard from '../../components/DetailsCard/DetailsCard';
 import Filter from '../Filter/Filter';
 import './App.css';
 import PropTypes from 'prop-types';
@@ -33,7 +33,7 @@ class App extends Component {
           const formula = this.props.formulas.find(formula => formula.id === match.params.id);
           return (
             <div>
-              <SingleCard {...formula} />
+              <DetailsCard {...formula} />
             </div>
           );
         }}/>
