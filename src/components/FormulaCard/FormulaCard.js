@@ -16,7 +16,7 @@ export const FormulaCard = (formula) => {
   };
 
   return (
-    <Link to={`/browse/${formula.id}`}>
+    <Link className="formula-link" to={`/browse/${formula.id}`}>
       <div className='formula-card' key={formula.id}>
         <h2>{formula.name}</h2>
         <h4>{formula.description}</h4>
