@@ -6,25 +6,51 @@ import './Filter.css'
 
 const specialties = [{ key: 'VHP', value: 'High Protein', text: 'Very High Protein (VHP)'}]
 const allergies = [{ key: 'Gluten', value: 'Wheat', text: 'Wheat and/or Gluten'},
-{ key: 'Corn', value: 'Corn', text: 'Corn'}]
+{ key: 'Corn', value: 'Corn', text: 'Corn'}, { key: 'Soy', value: 'Soy', text: 'Soy'}]
 
 class Filter extends Component {
 	constructor() {
 		super()
 
 		this.state = {
-			input: '',
-			allergens: []
+			allergens: [],
+			specialty: [],
+			mct: []
+
 		}
 	}
 
-	handleSubmit = (event) => {
+	handleSubmit = async (event) => {
 		event.preventDefault()
-		console.log('potato')
+		const allergens = await this.filterAllergens()
+		const specilty = await this.filterSpecialty()
+		const mct = await this.filterMCT()
 	}
 
 	handleChange = (event, data) => {
-		this.setState({ allergens: [...data.value]})		
+		event.preventDefault()
+		this.setState({ allergens: [...data.value]})
+	}
+
+	filterAllergens = async () => {
+		let urlParam = this.state.allergens.join()	
+		let url = `https://nurish-app.herokuapp.com/api/v1/formulas?allergens=${urlParam}`
+		const response = await fetch(url)
+		return await response.json()
+	}
+
+	filterSpecialty = async () => {
+		let urlParam = this.state.specialty.join()	
+		let url = `https://nurish-app.herokuapp.com/api/v1/formulas?specialty=${urlParam}`
+		const response = await fetch(url)
+		return await response.json()
+	}
+
+	filterMCT = async () => {
+		let urlParam = this.state.mct.join()
+		let url = `https://nurish-app.herokuapp.com/api/v1/formulas?specialty=${urlParam}`
+		const response = await fetch(url)
+		return await response.json()
 	}
 
 	render() {
