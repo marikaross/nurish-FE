@@ -57,6 +57,6 @@ export const mapDispatchToProps = (dispatch) => ({
 App.proptypes = {
   formulas: PropTypes.array,
   fetchFormula: PropTypes.func,
-  formulas.fin: PropTypes.func,
+  formulas.find: PropTypes.func,
 };
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
