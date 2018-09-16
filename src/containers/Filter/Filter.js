@@ -6,27 +6,65 @@ import './Filter.css'
 
 const specialties = [{ key: 'VHP', value: 'High Protein', text: 'Very High Protein (VHP)'}]
 const allergies = [{ key: 'Gluten', value: 'Wheat', text: 'Wheat and/or Gluten'},
-{ key: 'Corn', value: 'Corn', text: 'Corn'}]
+{ key: 'Corn', value: 'Corn', text: 'Corn'}, { key: 'Soy', value: 'Soy', text: 'Soy'}]
 
 class Filter extends Component {
 	constructor() {
 		super()
 
 		this.state = {
-			input: ''
+			allergens: [],
+			specialty: [],
+			mct: []
+
 		}
 	}
 
-	handleSubmit = (event) => {
+	handleSubmit = async (event) => {
 		event.preventDefault()
-		console.log('potato')
+		const allergens = await this.filterAllergens()
+		const specialty = await this.filterSpecialty()
+		const mct = await this.filterMCT()
+		this.compareFilter(allergens, specialty, mct)
 	}
 
-	handleChange = (data) => {
-		console.log(data)
+	handleChange = (event, data) => {
+
+		event.preventDefault()
+		this.setState({ allergens: [...data.value]})
+		console.log(this.state.allergens)
+	}
+
+	compareFilter = (allergens = [], specialty = [], mct = []) => {
+		switch (allergens) {
+			case allergens.length:
+
+		}
+ }
+
+	filterAllergens = async () => {
+		let urlParam = this.state.allergens.join()	
+		let url = `https://nurish-app.herokuapp.com/api/v1/formulas?allergens=${urlParam}`
+		const response = await fetch(url)
+		return await response.json()
+	}
+
+	filterSpecialty = async () => {
+		let urlParam = this.state.specialty.join()	
+		let url = `https://nurish-app.herokuapp.com/api/v1/formulas?specialty=${urlParam}`
+		const response = await fetch(url)
+		return await response.json()
+	}
+
+	filterMCT = async () => {
+		let urlParam = this.state.mct.join()
+		let url = `https://nurish-app.herokuapp.com/api/v1/formulas?specialty=${urlParam}`
+		const response = await fetch(url)
+		return await response.json()
 	}
 
 	render() {
+		const { value } = this.state
 		return (
 			<div className='form-container filter-container'>
 				<div className='link-container'>
@@ -35,8 +73,8 @@ class Filter extends Component {
 					<NavLink to='/browse'>browse</NavLink>
 				</div>
 				<form className='filter-form' onSubmit={this.handleSubmit}>
-				<Dropdown placeholder='specialty' fluid multiple search selection options={specialties} />
-				<Dropdown onChange={data => this.handleChange(data)} placeholder='allergies' fluid multiple search selection options={allergies} />
+				<Dropdown onChange={this.handleChange} placeholder='specialty' fluid search selection options={specialties} name="specialty" />
+				<Dropdown onChange={this.handleChange} placeholder='allergies' fluid multiple search selection options={allergies}/>
 				<Input list='mct splits' placeholder='mct split' />
     			<datalist id='mct splits'>
       			<option value='50:10:40' />
