@@ -7,21 +7,22 @@ import './FormulaCard.css';
 export const FormulaCard = (formula) => {
 
   const usageGuidelines = () => {
-    return formula.usage.map(usage => {
+    let usageArray = formula.usage.split(',')
+    return usageArray.map(usage => {
       return (
-        <h5 key={formula.id}>{usage}</h5>
+        <li key={formula.id}>{usage}</li>
       );
     });
   };
-  
+
   return (
-    <div className='formula-card' key={formula.id}>
-      <Link to={`/browse/${formula.id}`}>
-        <h2>{formula.title}</h2>
+    <Link to={`/browse/${formula.id}`}>
+      <div className='formula-card' key={formula.id}>
+        <h2>{formula.name}</h2>
         <h4>{formula.description}</h4>
-        <h4>usage: {usageGuidelines()}</h4>
-      </Link>
-    </div>
+        <ul>usage: {usageGuidelines()}</ul>
+      </div>
+    </Link>
   );
 };
 
