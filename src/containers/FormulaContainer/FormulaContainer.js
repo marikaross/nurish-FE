@@ -7,8 +7,15 @@ import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 
 
-export class FormulaContainer extends Component{
+export class FormulaContainer extends Component {
 
+  componentDidMount() {
+    this.props.animateLogo('collapse-logo')
+  }
+
+  componentWillUnmount() {
+    this.props.animateLogo('expand-logo')
+  }
 
   FormulaCards = () => {
 

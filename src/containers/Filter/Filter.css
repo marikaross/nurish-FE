@@ -5,7 +5,8 @@ div .filter-container {
 
 @keyframes grow-filter {
   0% {
-    width: 25%; }
+    width: 25%;
+    height: 25vh; }
   100% {
     width: 45%;
     height: 35vh; } }
