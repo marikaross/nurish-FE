@@ -13,11 +13,11 @@ let features ={
 	"Protein": "17%",
 	"Carbohydrate": "Many",
 	"Fat": "so much"
-}
+};
 
-let description = 'Beneprotein® instant protein powder is a modular whey protein source. Each 7 g serving provides 6 g of protein. It can be added to most foods, liquids and as a "protein flush" with tube feedings.'
+let description = 'Beneprotein® instant protein powder is a modular whey protein source. Each 7 g serving provides 6 g of protein. It can be added to most foods, liquids and as a "protein flush" with tube feedings.';
 
-let title = 'BENEPROTEIN®'
+let title = 'BENEPROTEIN®';
 
 
 let nutritionalContent= {
@@ -51,7 +51,7 @@ let nutritionalContent= {
   },
   "Limitations": "Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.",
   "Serving size": "* 1 scoop or packet"
-}
+};
 
 const SingleCard = () => {
 	
@@ -59,7 +59,7 @@ const SingleCard = () => {
     return formula.usage.map(use => {
       return (
           <li>{use}</li>
-        )
+        );
     });
   };
 
@@ -67,17 +67,17 @@ const SingleCard = () => {
 		return Object.keys(features).map(feature => {
 			return (
 				<li>{feature}: {features[feature]}</li>
-			)
+			);
 		});
   };
 
   const nutritionalHeaders = () => {
-  	let nutrients = Object.keys(nutritionalContent)
+  	let nutrients = Object.keys(nutritionalContent);
   	let headers = Object.keys(nutritionalContent[nutrients[0]])
   	return headers.map(nutrientHeader => {
   		return (
   			<span>{nutrientHeader}</span>
-  		)
+  		);
   	});
   };
 
@@ -89,11 +89,11 @@ const SingleCard = () => {
 	  				<span>
 	  					{nutritionalContent[nutrient][unit]}
 	  				</span>
-	  			)
-	  		})
+	  			);
+	  		});
   		} else {
   			return <span>{nutrient}: {nutritionalContent[nutrient]}</span>	
-  		}
+  		};
 
   		return (
   			<li>
@@ -102,9 +102,9 @@ const SingleCard = () => {
 	  			</span>
 	  				{content}
   			</li>
-  			)
-  	})
-  }
+  			);
+  	});
+  };
 
   return (
     <div className='single-card'>
@@ -136,7 +136,7 @@ const SingleCard = () => {
 				{ingredients}
 			</p>
     </div>
-  )
-}
+  );
+};
 
 export default SingleCard;
