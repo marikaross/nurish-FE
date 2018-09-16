@@ -23,15 +23,18 @@ class Search extends Component {
 
 	handleSubmit = (event) => {
 		event.preventDefault()
-		console.log(this.state.input, this.state.criteria)
 	}
 
-	handleChange = (input) => {
+	handleChange = (event, data) => {
+		this.setState({criteria: data.value})
+	}
+
+	handleInput = (input) => {
 		this.setState({input})
 	}
 
 
-	render() {
+	render() {		
 		return (
 			<div className='form-container search-container'>
 				<div className='link-container'>
@@ -43,10 +46,9 @@ class Search extends Component {
 				  <Input 
 				  	type='text'
 				  	placeholder='enter your criteria' 
-				  	onChange={event => this.handleChange(event.target.value)}
 				  	action >
-				    <input value={this.state.value}/>
-				    <Select compact options={options} defaultValue='name' value={this.state.criteria}/>
+				    <input onChange={(event) => this.handleInput(event.target.value)} value={this.state.value} name='input'/>
+				    <Select onChange={this.handleChange} compact options={options} name='criteria'/>
 				    <Button type='submit'>Search</Button>
 				  </Input>
 				</form>
