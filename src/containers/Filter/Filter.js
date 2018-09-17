@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { withRouter, NavLink } from 'react-router-dom';
 import { Dropdown, Input, Button } from 'semantic-ui-react';
 import { addFilterResults } from '../../actions';
-import { fetchResults } from '../../thunks';
+import { fetchResults } from '../../thunks/fetchResults';
 import PropTypes from 'prop-types';
 import './Filter.css'
 
