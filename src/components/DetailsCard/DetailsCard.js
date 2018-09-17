@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter, NavLink } from 'react-router-dom';
 import './DetailsCard.css';
 
 let formula = {
@@ -121,37 +122,45 @@ class DetailsCard extends Component {
 
   render() {
     return (
-      <div className='single-card'>
-      	<h1 className='formula-title'>{title}</h1>
-      	<img className='formula-image' src='https://github.com/jeremiahjstanley/pattrn-party/blob/master/css-resources/placeholder.png?raw=true'/>
-      	<p className='single-formula-description'>
-      		{description}
-      	</p>
-      	<h2 className='nutritional-management-header'>
-      		for the nutritional management of:
-      	</h2>
-      	<ul className='usage-guidelines'>
-      		{this.usageGuidelines()}
-  			</ul>
-  			<h2 className='features-header'>
-  				features at a glance:
-  			</h2>
-  			<ul className='features-table'>
-  				{this.featuresTable()}
-  			</ul>
-  			<h2 className='nutritional-information-header'>
-  				nutritional information:
-  			</h2>
-  			<ul className='nutritional-information'>
-  				 <span className='nutrient-headers'>{this.nutritionalHeaders()}</span>
-  				{this.nutritionalTable()}
-  			</ul>
-  			<p className='ingredients-text'><span className='ingredients-title'><strong>ingredients: </strong></span>
-  				{ingredients}
-  			</p>
+      <div className='details-card'>
+        <div className='link-container'>
+          <a onClick={this.props.history.goBack}>back</a>
+          <NavLink to='/search'>search</NavLink>
+          <NavLink to='/filter'>filter</NavLink>
+          <NavLink to='/browse'>browse</NavLink>
+        </div>
+        <div className='single-card'>
+        	<h1 className='formula-title'>{title}</h1>
+        	<img className='formula-image' src='https://github.com/jeremiahjstanley/pattrn-party/blob/master/css-resources/placeholder.png?raw=true'/>
+        	<p className='single-formula-description'>
+        		{description}
+        	</p>
+        	<h2 className='nutritional-management-header'>
+        		for the nutritional management of:
+        	</h2>
+        	<ul className='usage-guidelines'>
+        		{this.usageGuidelines()}
+    			</ul>
+    			<h2 className='features-header'>
+    				features at a glance:
+    			</h2>
+    			<ul className='features-table'>
+    				{this.featuresTable()}
+    			</ul>
+    			<h2 className='nutritional-information-header'>
+    				nutritional information:
+    			</h2>
+    			<ul className='nutritional-information'>
+    				 <span className='nutrient-headers'>{this.nutritionalHeaders()}</span>
+    				{this.nutritionalTable()}
+    			</ul>
+    			<p className='ingredients-text'><span className='ingredients-title'><strong>ingredients: </strong></span>
+    				{ingredients}
+    			</p>
+        </div>
       </div>
     ); 
   }
 };
 
-export default DetailsCard;
+export default withRouter(DetailsCard);
