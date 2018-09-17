@@ -1,9 +1,13 @@
 language: node_js
 node_js:
-  - "node"
+- node
 script:
-  - npm test
+- npm test
 notifications:
   email: false
 deploy:
   provider: heroku
+  api_key:
+    secure: Ttsjs19dh6u5uxPIhkBwSs4YjhGshSN3UWh58mTADnaFBJgyBZ4NDdm/DAxBkSHKTAMgVPyc8KdPcUwmQ09eiLX+PBrZ9hrA5vAdEnDOd0mYV95Ux/aUyHGGnQh6fQatzPayf7jhJk+b9NgwXlgCriWwf5+eylqaA71qVrlMq/69RY+g/H0vtkriJjqZF7uGOSG205qnlUOLZk+hMMc2w3H2LGSYVIA8WdURS/QpdWusSFZc80qqeEBYjdlhvkCq5xQJa2kAmjxtUS7kkyOFavsBqWIq2rIUUbzCs9d9fIMjzXPBhDiM8zfom3ibD/ClTZsyC0W9s09Tir/M7rBE1QIgFmQPEIlIm/jw4SNrbjGdQ/4WTSI2Bjpfp2HrsPXE46s6IL4Y5Kex+pYZN8u+vtWqdas70nWSm3A4vFC15wauQZAsS1K/zofH089WnYe9ita1e8gbr8SXK3pOlmU2SRv6GcE64FnGVqWaRNUew9PyhovmCvJua8vKhaZSP8ga72cS3Ual4Vu6bQdKAZoNXVE0aDEhI9vfeABu3UCbO+3FEvsAwIGAjsZwdS/YhP/x4pWcQ1xtzdY1wmuKUCGM4qZC/4B5YJRJAdMEYbNu4j+FkCAtjF+NqKoGAhOj3Bayw7HqLXX1yfujbFXTX6yBdn7968Z7WAMCYhcoySju97M=
+  app: nurish-app-fe
+  skip_cleanup: true
