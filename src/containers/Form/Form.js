@@ -13,7 +13,7 @@ class Form extends Component {
       <div className="form-container links">
 				<NavLink to='/search'>search</NavLink>
 				<NavLink to='/filter'>filter</NavLink>
-				<NavLink to='/browse'>browse</NavLink>
+				<NavLink to='/formulas'>browse</NavLink>
       </div>
     );
   }

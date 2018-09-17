@@ -17,11 +17,16 @@ class Filter extends Component {
 	}
 
 	handleSubmit = async (event) => {
-		event.preventDefault()
-		const specialty = await this.fetchFormulas('specialty') 
-		const allergens = await this.fetchFormulas('allergens')
-		const mct = await this.fetchFormulas('mct')
-		// this.filterFormulas(allergens, specialty, mct)
+		event.preventDefault()	
+		let allergenQuery = this.state.allergens.length ? this.state.allergens.join() : '';
+		let specialtyQuery = this.state.specialty.length ? this.state.specialty.join() : '';
+		let mctQuery = this.state.mct.length ? this.state.mct.join() : '';
+		let allergenParam = allergenQuery.length ? '&allergens=' : '';
+		let specialtyParam = specialtyQuery.length ? '&specialty=' : '';
+		let mctParam = allergenQuery.length ? '&mct_lct=' : '';
+		let url = `https://nurish-app.herokuapp.com/api/v1/formulas?${allergenParam}${allergenQuery}${specialtyParam}${specialtyQuery}${mctParam}${mctQuery}`
+		const response = await fetch(url)
+		return await response.json()
 	}
 
 	handleSpecialty = (event, data) => {
@@ -36,28 +41,13 @@ class Filter extends Component {
 		this.setState({ mct: [data.value]})
 	}
  
-	fetchFormulas = async (criteria) => {
-		let urlParam = this.state[criteria].join()	
-		let url = `https://nurish-app.herokuapp.com/api/v1/formulas?${criteria}=${urlParam}`
-		console.log(url)
-		const response = await fetch(url)
-		return await response.json()
-	}
-
-	// filterFormulas = (allergens = [], specialty = [], mct = []) => {
-	// 	switch (allergens) {
-	// 		case allergens.length:
-
-	// 	}
- // }
-
 	render() {
 		return (
 			<div className='form-container filter-container'>
 				<div className='link-container'>
 					<NavLink to='/'>back</NavLink>
 					<NavLink to='/search'>search</NavLink>
-					<NavLink to='/browse'>browse</NavLink>
+					<NavLink to='/formulas'>browse</NavLink>
 				</div>
 				<form className='filter-form' onSubmit={this.handleSubmit}>
 				<Dropdown onChange={this.handleSpecialty} placeholder='specialty' fluid search selection options={specialties}/>
