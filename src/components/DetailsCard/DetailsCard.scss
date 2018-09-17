@@ -1,18 +1,21 @@
+.details-card {
+	background-color: rgba(255, 255, 255, 0.2);
+	width: 65%;
+  border-radius: 30px;
+  color: #FFF;
+  min-width: 20rem;
+  padding: 1.5rem;
+  margin: 0 auto 6rem;	
+}
 
 .single-card {
-	background-color: rgba(255, 255, 255, 0.2);
 	display: grid;
 	grid-auto-flow: column;
 	grid-template-columns: 45% 45%;
 	grid-column-gap: 3%;
 	justify-content: center;
-	width: 65%;
-  border-radius: 30px;
-  color: #FFF;
-  margin: 0 auto 6rem;
-  min-width: 20rem;
-  padding: 1.5rem;
   text-align: left;
+  margin-top: 1.5rem;
 }
 
 .single-card {
@@ -93,7 +96,7 @@
 	display: grid;
 	grid-template-columns: 40% 27% 33%;
 	border-bottom: 1.5px solid #FFF;
-	margin-bottom: .2rem;none
+	margin-bottom: .2rem;
 }
 
 .nutrient-header-1 {
