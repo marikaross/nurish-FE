@@ -34,7 +34,7 @@ class Search extends Component {
 				<div className='link-container'>
 					<NavLink to='/'>back</NavLink>
 					<NavLink to='/filter'>filter</NavLink>
-					<NavLink to='/browse'>browse</NavLink>
+					<NavLink to='/formulas'>browse</NavLink>
 				</div>
 				<form className='search-field' onSubmit={this.handleSubmit}>
 					<Input 
