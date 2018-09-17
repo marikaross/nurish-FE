@@ -3,7 +3,7 @@ export const addFormulas = (formulas) => ({
   formulas
 })
 
-export const addFilterResults => (filterResults) => ({
+export const addFilterResults = (filterResults) => ({
   type: "ADD_FILTER_RESULTS",
   filterResults
 }) 
