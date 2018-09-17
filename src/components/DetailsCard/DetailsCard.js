@@ -127,7 +127,7 @@ class DetailsCard extends Component {
           <a onClick={this.props.history.goBack}>back</a>
           <NavLink to='/search'>search</NavLink>
           <NavLink to='/filter'>filter</NavLink>
-          <NavLink to='/browse'>browse</NavLink>
+          <NavLink to='/formulas'>browse</NavLink>
         </div>
         <div className='single-card'>
         	<h1 className='formula-title'>{title}</h1>
