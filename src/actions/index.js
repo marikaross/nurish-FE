@@ -8,6 +8,11 @@ export const formulaFetchDataSuccess = (formulas) => ({
   formulas
 })
 
+export const filterResultFetchDataSuccess = (results) => ({
+  type: 'FILTER_RESULT_FETCH_DATA_SUCCESS',
+  results
+})
+
 export const isLoading = (bool) => ({
   type: 'IS_LOADING',
   isLoading: bool
