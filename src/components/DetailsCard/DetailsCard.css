@@ -1,20 +1,27 @@
 .details-card {
+  animation: shrink-container 1s;
   background-color: rgba(255, 255, 255, 0.2);
   width: 65%;
   border-radius: 30px;
   color: #FFF;
+  margin: 0 auto 6rem;
   min-width: 20rem;
-  padding: 1.5rem;
-  margin: 0 auto 6rem; }
+  padding: 1.5rem; }
+
+@keyframes shrink-container {
+  0% {
+    width: 85%; }
+  100% {
+    width: 65%; } }
 
 .single-card {
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: 45% 45%;
   grid-column-gap: 3%;
+  grid-template-columns: 45% 45%;
   justify-content: center;
-  text-align: left;
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem;
+  text-align: left; }
 
 .single-card ul {
   list-style: none;
@@ -75,9 +82,9 @@
   grid-auto-flow: row; }
 
 .nutrient-headers {
+  border-bottom: 1.5px solid #FFF;
   display: grid;
   grid-template-columns: 40% 27% 33%;
-  border-bottom: 1.5px solid #FFF;
   margin-bottom: .2rem; }
 
 .nutrient-header-1 {
@@ -89,10 +96,10 @@
   text-align: right; }
 
 .nutrient-row {
-  display: grid;
-  grid-template-columns: 50% 35% 15%;
-  grid-auto-flow: row;
   border-bottom: .5px solid #FFF;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 50% 35% 15%;
   margin: .25rem 0; }
 
 .serving-size {
