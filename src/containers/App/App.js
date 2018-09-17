@@ -48,8 +48,8 @@ class App extends Component {
         <Route exact path='/filter' component={Filter}/>
 				<Route exact path='/search' component={Search}/>
 				<Route exact path='/calculate' component={Calculate}/>
-				<Route exact path='/browse' render={() => <FormulaContainer animateLogo={this.animateLogo} />}/>
-        <Route exact path='/browse/:id' render={({ match }) => {
+				<Route exact path='/formulas' render={() => <FormulaContainer animateLogo={this.animateLogo} />}/>
+        <Route exact path='/formulas/:id' render={({ match }) => {
           const formula = this.props.formulas.find(formula => formula.id == match.params.id);
           return (
             <div>
