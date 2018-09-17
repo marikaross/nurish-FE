@@ -108,4 +108,4 @@ Filter.propTypes = {
   fetchResults: PropTypes.func,
 };
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Filter);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Filter));
