@@ -3,13 +3,8 @@ import { connect } from 'react-redux';
 import { withRouter, NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Dropdown, Input, Button, Select } from 'semantic-ui-react';
+import { searchCriteria } from '../../formData'
 import './Search.css';
-
-const options = [
-  { key: 'name', text: 'name', value: 'name' },
-  { key: 'HPCP', text: 'HPCP', value: 'HPCP' },
-  { key: 'allergen', text: 'allergen', value: 'allergen' },
-]
 
 class Search extends Component {
 	constructor() {
@@ -39,7 +34,7 @@ class Search extends Component {
 				<div className='link-container'>
 					<NavLink to='/'>back</NavLink>
 					<NavLink to='/filter'>filter</NavLink>
-					<NavLink to='/browse'>browse</NavLink>
+					<NavLink to='/formulas'>browse</NavLink>
 				</div>
 				<form className='search-field' onSubmit={this.handleSubmit}>
 					<Input 
@@ -47,7 +42,7 @@ class Search extends Component {
 				  	placeholder='enter your criteria' 
 				  	action >
 				  	<input onChange={(event) => this.handleInput(event.target.value)} value={this.state.value} name='input'/>
-				  	<Select onChange={this.handleChange} defaultValue={'name'} compact options={options} name='criteria'/>
+				  	<Select onChange={this.handleChange} defaultValue={'name'} compact options={searchCriteria} name='criteria'/>
 				  	<Button type='submit'>Search</Button>
 					</Input>
 				</form>

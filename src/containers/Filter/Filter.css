@@ -1,15 +1,15 @@
 div .filter-container {
   animation: grow-filter 1s;
-  height: 35vh;
+  height: 375px;
   width: 45%; }
 
 @keyframes grow-filter {
   0% {
     width: 25%;
-    height: 25vh; }
+    height: 250px; }
   100% {
     width: 45%;
-    height: 35vh; } }
+    height: 375px; } }
 
 .filter-form {
   display: flex;

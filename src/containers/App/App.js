@@ -27,7 +27,6 @@ class App extends Component {
   }
 
   animateLogo = (position) => {
-    console.log(position)
     switch (position) {
       case 'collapse-logo':
         this.setState({position})
@@ -49,12 +48,12 @@ class App extends Component {
         <Route exact path='/filter' component={Filter}/>
 				<Route exact path='/search' component={Search}/>
 				<Route exact path='/calculate' component={Calculate}/>
-				<Route exact path='/browse' render={() => <FormulaContainer animateLogo={this.animateLogo} />}/>
-        <Route exact path='/browse/:id' render={({ match }) => {
-          const formula = this.props.formulas.find(formula => formula.id === match.params.id);
+				<Route exact path='/formulas' render={() => <FormulaContainer animateLogo={this.animateLogo} />}/>
+        <Route exact path='/formulas/:id' render={({ match }) => {
+          const formula = this.props.formulas.find(formula => formula.id == match.params.id);
           return (
             <div>
-              <DetailsCard {...formula} animateLogo={this.animateLogo}/>
+              <DetailsCard formula={formula} animateLogo={this.animateLogo}/>
             </div>
           );
         }}/>
