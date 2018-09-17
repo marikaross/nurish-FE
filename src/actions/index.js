@@ -3,6 +3,11 @@ export const addFormulas = (formulas) => ({
   formulas
 })
 
+export const addFilterResults => (filterResults) => ({
+  type: "ADD_FILTER_RESULTS",
+  filterResults
+}) 
+
 export const formulaFetchDataSuccess = (formulas) => ({
   type: 'FORMULA_FETCH_DATA_SUCCESS',
   formulas
