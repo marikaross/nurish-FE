@@ -54,8 +54,12 @@ let nutritionalContent= {
 };
 
 class DetailsCard extends Component {
+  constructor(props) {
+    super(props) 
+  }
 
   componentDidMount() {
+    console.log(this.props)
     this.props.animateLogo('collapse-logo')
   }
 
@@ -82,9 +86,10 @@ class DetailsCard extends Component {
   nutritionalHeaders = () => {
   	let nutrients = Object.keys(nutritionalContent);
   	let headers = Object.keys(nutritionalContent[nutrients[0]])
-  	return headers.map(nutrientHeader => {
+  	return headers.map((nutrientHeader, index) => {
+      let className = `nutrient-header-${index + 1}`
   		return (
-  			<span>{nutrientHeader}</span>
+  			<span className={className}>{nutrientHeader}</span>
   		);
   	});
   };
@@ -100,12 +105,12 @@ class DetailsCard extends Component {
 	  			);
 	  		});
   		} else {
-  			return <span>{nutrient}: {nutritionalContent[nutrient]}</span>	
+  			return <span className='serving-size'>{nutrient}: {nutritionalContent[nutrient]}</span>	
   		};
 
   		return (
-  			<li>
-	  			<span className='nutrient-name'>
+  			<li className='nutrient-row'>
+	  			<span className>
 	  				{nutrient}:
 	  			</span>
 	  				{content}
@@ -141,7 +146,7 @@ class DetailsCard extends Component {
   				 <span className='nutrient-headers'>{this.nutritionalHeaders()}</span>
   				{this.nutritionalTable()}
   			</ul>
-  			<p className='ingredients-text'><span className='ingredients-title'>ingredients:</span>
+  			<p className='ingredients-text'><span className='ingredients-title'><strong>ingredients: </strong></span>
   				{ingredients}
   			</p>
       </div>
