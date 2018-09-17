@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter, NavLink } from 'react-router-dom';
 import { Dropdown, Input, Button } from 'semantic-ui-react';
+import { addFilterResults } from '../../actions';
+import { fetchResults } from '../../thunks/fetchResults';
+import PropTypes from 'prop-types';
 import './Filter.css'
 import { mctSplit, allergies, specialties } from '../../formData'
 
@@ -60,4 +63,21 @@ class Filter extends Component {
 	}
 }
 
-export default withRouter(Filter);
+export const mapStateToProps = (state) => ({
+	filterResults: state.filterResults,
+	isLoading: state.isLoading,
+  hasErrored: state.hasErrored
+});
+
+export const mapDispatchToProps = (dispatch) => ({
+	addFilterResults: (filterResults) => dispatch(addFilterResults(filterResults)),
+	fetchResults: (url) =>  dispatch(fetchResults(url))
+
+})
+
+Filter.propTypes = {
+  filterResults: PropTypes.array,
+  fetchResults: PropTypes.func,
+};
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Filter));

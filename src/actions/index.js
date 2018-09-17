@@ -3,9 +3,19 @@ export const addFormulas = (formulas) => ({
   formulas
 })
 
+export const addFilterResults = (filterResults) => ({
+  type: "ADD_FILTER_RESULTS",
+  filterResults
+}) 
+
 export const formulaFetchDataSuccess = (formulas) => ({
   type: 'FORMULA_FETCH_DATA_SUCCESS',
   formulas
+})
+
+export const filterResultFetchDataSuccess = (results) => ({
+  type: 'FILTER_RESULT_FETCH_DATA_SUCCESS',
+  results
 })
 
 export const isLoading = (bool) => ({
