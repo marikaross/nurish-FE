@@ -1,48 +1,67 @@
-
-.single-card {
+.details-card {
 	background-color: rgba(255, 255, 255, 0.2);
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-auto-flow: column;
 	width: 65%;
   border-radius: 30px;
-  margin: 0 auto 6rem;
+  color: #FFF;
   min-width: 20rem;
   padding: 1.5rem;
-  color: #FFF;
+  margin: 0 auto 6rem;	
+}
+
+.single-card {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 45% 45%;
+	grid-column-gap: 3%;
+	justify-content: center;
   text-align: left;
+  margin-top: 1.5rem;
 }
 
 .single-card {
 	& ul {
 		list-style: none;
+		padding: 0;
+	}
+}
+
+.single-card {
+	& h2 {
+		font-size: 1.25rem;
+		margin: .5rem 0;
 	}
 }
 
 .formula-title {
-	grid-column: 1;
-	text-transform: lowercase;
 	align-self: center;
-	margin: .25rem;
 	font-size: 1.5rem;
+	grid-column: 1;
+	margin: .25rem;
+	text-transform: lowercase;
 }
 
 .formula-image {
 	grid-column: 1;
+	margin: 1rem auto;
+	max-width: 20rem;
 	width: 100%;
-	margin: 1rem 0;
 }
 
 .single-formula-description {
 	grid-column: 1;
+	margin: 0;
 }
 
 .nutritional-management-header {
+	align-self: center;
 	grid-column: 1;
 }
 
 .usage-guidelines {
+	display: grid;
+	grid-auto-flow: column;
 	grid-column: 1;
+	grid-template-rows: 25% 25% 25% 25%;
 }
 
 .features-header {
@@ -50,19 +69,56 @@
 }
 
 .features-table {
+	display: grid;
+	grid-auto-flow: column;
 	grid-column: 1;
+	grid-template-rows: 25% 25% 25% 25%;
 }
 
 .nutritional-information-header {
 	align-self: center;
 	grid-column: 2;
-	margin: .25rem;
 	grid-row: 1;
+	margin: .25rem;
 }
 
 .nutritional-information {
 	grid-column: 2;
 	grid-row: 2;
+}
+
+.nutritional-information {
+	display: grid;
+	grid-auto-flow: row;
+}
+
+.nutrient-headers {
+	display: grid;
+	grid-template-columns: 40% 27% 33%;
+	border-bottom: 1.5px solid #FFF;
+	margin-bottom: .2rem;
+}
+
+.nutrient-header-1 {
+	grid-column: 2;
+	text-align: center;
+}
+
+.nutrient-header-2 {
+	grid-column: 3;
+	text-align: right;
+}
+
+.nutrient-row {
+	display: grid;
+	grid-template-columns: 50% 35% 15%;
+	grid-auto-flow: row;
+	border-bottom: .5px solid #FFF;
+	margin: .25rem 0;
+}
+
+.serving-size {
+	margin: .5rem 0;
 }
 
 .ingredients-text {

@@ -4,11 +4,11 @@ body {
   font-family: 'Avenir', sans-serif;
 
   background: linear-gradient(216deg, #f89838, #f0586e);
-  background-size: 400% 400%;
+  background-size: 1000% 1000%;;
 
-  -webkit-animation: animate-gradient 1ms ease infinite;
-  -moz-animation: animate-gradient 1ms ease infinite;
-  animation: animate-gradient 1ms ease infinite;
+  -webkit-animation: animate-gradient 0s ease infinite;
+  -moz-animation: animate-gradient 0s ease infinite;
+  animation: animate-gradient 0s ease infinite;
 
   @-webkit-keyframes animate-gradient {
       0%{background-position:0% 50%}
