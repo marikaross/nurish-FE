@@ -3,9 +3,21 @@
 exports[`FormulaContainer should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <withRouter(Connect(FormulaContainer))
+  Symbol(enzyme.__unrendered__): <FormulaContainer
+    animateLogo={[Function]}
     filterResultCard={[Function]}
+    filterResults={
+        Array [
+            Object {
+              "title": "boost",
+            },
+            Object {
+              "title": "smoothie",
+            },
+          ]
+    }
     formulaCard={[Function]}
+    mockAddFilterResults={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -18,25 +30,339 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": Array [
+        <div
+          className="link-container"
+>
+          <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    to="/"
+          >
+                    back
+          </NavLink>
+          <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    to="/search"
+          >
+                    search
+          </NavLink>
+          <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    to="/filter"
+          >
+                    filter
+          </NavLink>
+</div>,
+        <div
+          className="formula-cards"
+>
+          <Unknown
+                    title="boost"
+          />
+          <Unknown
+                    title="smoothie"
+          />
+</div>,
+      ],
+      "className": "form-container formula-container",
     },
     "ref": null,
-    "rendered": [Function],
-    "type": [Function],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/"
+>
+              back
+</NavLink>,
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/search"
+>
+              search
+</NavLink>,
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/filter"
+>
+              filter
+</NavLink>,
+          ],
+          "className": "link-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": "back",
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": "back",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": "search",
+              "to": "/search",
+            },
+            "ref": null,
+            "rendered": "search",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": "filter",
+              "to": "/filter",
+            },
+            "ref": null,
+            "rendered": "filter",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Unknown
+              title="boost"
+/>,
+            <Unknown
+              title="smoothie"
+/>,
+          ],
+          "className": "formula-cards",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "title": "boost",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "title": "smoothie",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": Array [
+          <div
+            className="link-container"
+>
+            <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        to="/"
+            >
+                        back
+            </NavLink>
+            <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        to="/search"
+            >
+                        search
+            </NavLink>
+            <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        to="/filter"
+            >
+                        filter
+            </NavLink>
+</div>,
+          <div
+            className="formula-cards"
+>
+            <Unknown
+                        title="boost"
+            />
+            <Unknown
+                        title="smoothie"
+            />
+</div>,
+        ],
+        "className": "form-container formula-container",
       },
       "ref": null,
-      "rendered": [Function],
-      "type": [Function],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/"
+>
+                back
+</NavLink>,
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/search"
+>
+                search
+</NavLink>,
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/filter"
+>
+                filter
+</NavLink>,
+            ],
+            "className": "link-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": "back",
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "back",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": "search",
+                "to": "/search",
+              },
+              "ref": null,
+              "rendered": "search",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": "filter",
+                "to": "/filter",
+              },
+              "ref": null,
+              "rendered": "filter",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Unknown
+                title="boost"
+/>,
+              <Unknown
+                title="smoothie"
+/>,
+            ],
+            "className": "formula-cards",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "title": "boost",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "title": "smoothie",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
