@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter, NavLink } from 'react-router-dom';
-import { Dropdown, Input, Button } from 'semantic-ui-react';
-import { addFilterResults } from '../../actions';
+import { mctSplit, allergies, specialties } from '../../formData';
+import { Dropdown, Button } from 'semantic-ui-react';
 import { fetchResults } from '../../thunks/fetchResults';
+import { withRouter, NavLink } from 'react-router-dom';
+import { addFilterResults } from '../../actions';
 import PropTypes from 'prop-types';
-import './Filter.css'
-import { mctSplit, allergies, specialties } from '../../formData'
+import './Filter.css';
 
 class Filter extends Component {
 	constructor() {
@@ -27,21 +27,21 @@ class Filter extends Component {
 		let allergenParam = allergenQuery.length ? '&allergens=' : '';
 		let specialtyParam = specialtyQuery.length ? '&specialty=' : '';
 		let mctParam = allergenQuery.length ? '&mct_lct=' : '';
-		let url = `https://nurish-app.herokuapp.com/api/v1/formulas?${allergenParam}${allergenQuery}${specialtyParam}${specialtyQuery}${mctParam}${mctQuery}`
+		let url = `https://nurish-app.herokuapp.com/api/v1/formulas?${allergenParam}${allergenQuery}${specialtyParam}${specialtyQuery}${mctParam}${mctQuery}`;
 		const response = await fetch(url)
 		return await response.json()
 	}
 
 	handleSpecialty = (event, data) => {
-		this.setState({ specialty: [data.value]})
+		this.setState({ specialty: [data.value]});
 	}
 
 	handleAllergens = (event, data) => {
-		this.setState({ allergens: [...data.value]})
+		this.setState({ allergens: [...data.value]});
 	}
 
 	handleMCT = (event, data) => {
-		this.setState({ mct: [data.value]})
+		this.setState({ mct: [data.value]});
 	}
  
 	render() {
