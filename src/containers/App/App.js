@@ -6,7 +6,6 @@ import FormulaContainer from '../FormulaContainer/FormulaContainer';
 import DetailsCard from '../../components/DetailsCard/DetailsCard';
 import { fetchFormula } from '../../thunks/fetchFormula.js';
 import { addFormulas } from '../../actions';
-import Calculate from '../Calculate/Calculate';
 import Filter from '../Filter/Filter';
 import Search from '../Search/Search';
 import Form from '../Form/Form';
@@ -47,7 +46,6 @@ export class App extends Component {
         <Route exact path='/' component={Form}/>
         <Route exact path='/filter' component={Filter}/>
 				<Route exact path='/search' component={Search}/>
-				<Route exact path='/calculate' component={Calculate}/>
 				<Route exact path='/formulas' render={() => <FormulaContainer animateLogo={this.animateLogo} />}/>
         <Route exact path='/formulas/:id' render={({ match }) => {
           const formula = this.props.formulas.find(formula => formula.id == match.params.id);
