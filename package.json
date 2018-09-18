@@ -39,7 +39,7 @@
       "!src/setupTests.js",
       "!src/registerServiceWorker.js",
       "!src/reducers/index.js",
-      "!src/data-helper"
+      "!src/data-helper/*.js"
     ]
   }
 }
