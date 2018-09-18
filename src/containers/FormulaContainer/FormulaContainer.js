@@ -17,17 +17,30 @@ export class FormulaContainer extends Component {
     this.props.animateLogo('expand-logo')
   }
 
-  FormulaCards = () => {
+  filterResultCard = () => {
+    return this.props.filterResults.map(formula => {
+        return (
+          <FormulaCard
+            key={formula.id}
+            {...formula}
+          />
+          )
+      })
 
-    return this.props.formulas.map(formula => {
-      return (
-        <FormulaCard
-          key={formula.id}
-          {...formula}
-        />
-        )
-    })
   }
+
+  FormulaCard = () => {
+    return this.props.formulas.map(formula => {
+        return (
+          <FormulaCard
+            key={formula.id}
+            {...formula}
+          />
+          )
+      })
+  }
+
+
 
   render() {
   	return (
@@ -38,7 +51,7 @@ export class FormulaContainer extends Component {
           <NavLink to='/filter'>filter</NavLink>
         </div>
         <div className='formula-cards'>
-          {this.FormulaCards()}
+          {this.props.filterResults.length ? this.filterResultCard() : this.FormulaCard()}
         </div>
   		</div>
   	)
@@ -46,7 +59,8 @@ export class FormulaContainer extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  formulas: state.formulas
+  formulas: state.formulas,
+  filterResults: state.filterResults
 })
 
 export default withRouter(connect(mapStateToProps, null)(FormulaContainer));

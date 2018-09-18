@@ -1,5 +1,4 @@
 import {isLoading, hasErrored, formulaFetchDataSuccess} from '../actions';
-import {formulaCleaner} from '../data-helper/formula-cleaner.js';
 
 export const fetchFormula = (url) => {
   return async (dispatch) => {

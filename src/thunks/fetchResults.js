@@ -11,8 +11,7 @@ export const fetchResults = (url) => {
       }
       dispatch(isLoading(false))
       const result = await response.json()
-      const cleanFormulas = formulaCleaner(result)
-      dispatch(filterResultFetchDataSuccess(cleanFormulas))
+      dispatch(filterResultFetchDataSuccess(result))
     } catch (error) {
       dispatch(hasErrored(true))
     }
