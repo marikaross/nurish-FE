@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { withRouter, NavLink, Route } from 'react-router-dom';
-import Search from '../Search/Search';
-import FormulaContainer from '../FormulaContainer/FormulaContainer';
-import Calculate from '../Calculate/Calculate';
+import { withRouter, NavLink} from 'react-router-dom';
 import './Form.css'; 
-import PropTypes from 'prop-types';
 
 class Form extends Component {
   render() {
@@ -17,10 +12,6 @@ class Form extends Component {
       </div>
     );
   }
-}
-
-Form.propTypes = {
-  
 }
 
 export default withRouter((Form));

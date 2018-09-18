@@ -1,3 +1,5 @@
+@import '../App/App.scss';
+
 div {
 	& .filter-container {
 		animation: grow-filter 1s;
@@ -38,4 +40,9 @@ div {
 	& .button {
 		background-color: #FFF;
 	}
+}
+
+.ui.button:hover {
+	background-color: #FFF;
+	color: $orange;
 }

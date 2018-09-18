@@ -2,24 +2,12 @@ import React, { Component } from 'react';
 import { withRouter, NavLink } from 'react-router-dom';
 import './DetailsCard.css';
 
-let formula = {
-  usage: ['like', 'eating', 'dear, god', 'let this be over']
-};
-
-let ingredients = "WATER, CORN SYRUP, MILK PROTEIN, SUGAR, VEGETABLE OILS (CANOLA, HIGH OLEIC SUNFLOWER AND CORN), SOY PROTEIN, SALT, VITAMINS (VITAMIN A PALMITATE, VITAMIN D3, DL-ALPHA-TOCOPHERYL ACETATE, SODIUM ASCORBATE, ASCORBIC ACID, THIAMINE HYDROCHLORIDE, RIBOFLAVIN, NIACINAMIDE, CALCIUM PANTOTHENATE, PYRIDOXINE HYDROCHLORIDE, BIOTIN, FOLIC ACID, CHOLINE BITARTRATE), MINERALS (SODIUM CITRATE, POTASSIUM CITRATE, POTASSIUM HYDRATE, POTASSIUM CHLORIDE, CALCIUM CARBONATE, TRICALCIUM PHOSPHATE, MAGNESIUM PHOSPHATE, FERROUS SULPHATE, ZINC SULPHATE, MANGANESE SULPHATE, COPPER SULPHATE, POTASSIUM IODIDE, SODIUM SELENITE, SODIUM MOLYBDATE, CHROMIUM TRICHLORIDE), CELLULOSE GEL AND GUM, SOY LECITHIN, FLAVOUR, CARRAGEENAN, STEVIA EXTRACT, DIMETHYLPOLYSILOXANE.";
-
-
 let features ={ 
 	"Caloric Density": "1.0 Cal/ml",
 	"Protein": "17%",
 	"Carbohydrate": "Many",
 	"Fat": "so much"
 };
-
-let description = 'Beneprotein® instant protein powder is a modular whey protein source. Each 7 g serving provides 6 g of protein. It can be added to most foods, liquids and as a "protein flush" with tube feedings.';
-
-let title = 'BENEPROTEIN®';
-
 
 let nutritionalContent= {
   "Calories": {
@@ -55,12 +43,8 @@ let nutritionalContent= {
 };
 
 class DetailsCard extends Component {
-  constructor(props) {
-    super(props) 
-  }
 
   componentDidMount() {
-    console.log(this.props)
     this.props.animateLogo('collapse-logo')
   }
 
@@ -109,14 +93,14 @@ class DetailsCard extends Component {
   			return <span className='serving-size'>{nutrient}: {nutritionalContent[nutrient]}</span>	
   		};
 
-  		return (
-  			<li className='nutrient-row'>
-	  			<span className>
-	  				{nutrient}:
-	  			</span>
-	  				{content}
-  			</li>
-  			);
+		return (
+			<li className='nutrient-row'>
+  			<span className>
+  				{nutrient}:
+  			</span>
+  				{content}
+			</li>
+			);
   	});
   };
 
@@ -131,7 +115,7 @@ class DetailsCard extends Component {
         </div>
         <div className='single-card'>
         	<h1 className='formula-title'>{this.props.formula.title}</h1>
-        	<img className='formula-image' src='https://github.com/jeremiahjstanley/pattrn-party/blob/master/css-resources/placeholder.png?raw=true'/>
+        	<img className='formula-image' alt='' src='https://github.com/jeremiahjstanley/pattrn-party/blob/master/css-resources/placeholder.png?raw=true'/>
         	<p className='single-formula-description'>
         		{this.props.formula.description}
         	</p>

@@ -72,3 +72,6 @@ a {
     margin: 0 0 5vh; }
   100% {
     margin: 25vh 0 5vh; } }
+
+.ui.segment {
+  opacity: 0; }
