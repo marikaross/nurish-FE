@@ -1,12 +1,17 @@
 
 export const searchCriteria = [
   { key: 'name', text: 'name', value: 'name' },
-  { key: 'HPCP', text: 'HPCP', value: 'HPCP' },
+  { key: 'hcpc', text: 'hcpc', value: 'hcpc' },
   { key: 'allergen', text: 'allergen', value: 'allergen' },
 ]
 
 export const specialties = [
-	{ key: 'VHP', value: 'HighProtein', text: 'Very High Protein (VHP)'}
+	{ key: 'vhp', value: 'vhp', text: 'very high protein (vhp)'},
+	{ key: 'vhc', value: 'vhc', text: 'very high calorie (vhc)'},
+	{ key: 'diabetic', value: 'diabetic', text: 'diabetic'},
+	{ key: 'renal', value: 'renal', text: 'renal'},
+	{ key: 'semi-elemental', value: 'semi-elemental', text: 'gut malabsorption (semi-elemental)'},
+	{ key: 'pediatric', value: 'pediatric', text: 'pediatric)'},
 ]
 
 export const allergies = [
