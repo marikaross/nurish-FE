@@ -25,11 +25,11 @@ class Filter extends Component {
 		let specialtyQuery = this.state.specialty.length ? this.state.specialty.join() : '';
 		let mctQuery = this.state.mct.length ? this.state.mct.join() : '';
 		let allergenParam = allergenQuery.length ? '&allergens=' : '';
-		let specialtyParam = specialtyQuery.length ? '&specialty=' : '';
-		let mctParam = allergenQuery.length ? '&mct_lct=' : '';
+		let specialtyParam = specialtyQuery.length ? '&type=' : '';
+		let mctParam = mctQuery.length ? '&mct_lct=' : '';
 		let url = `https://nurish-app.herokuapp.com/api/v1/formulas?${allergenParam}${allergenQuery}${specialtyParam}${specialtyQuery}${mctParam}${mctQuery}`
-		const response = await fetch(url)
-		return await response.json()
+		const response = await this.props.fetchResults(url)
+		return response
 	}
 
 	handleSpecialty = (event, data) => {
