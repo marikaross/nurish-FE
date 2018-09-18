@@ -47,4 +47,26 @@ describe('Filter', () => {
     const mappedProps = mapStateToProps(mockState);
     expect(mappedProps).toEqual(expectedProps);
   });
+
+  it('should call dispatch with addFilterResults', () => {
+    const mockState = {
+      filterResults: mockFilterResults,
+      addFilterResults: mockAddFilterResults,
+      fetchResults: mockFetchResults
+    };
+
+    const mockDispatch = jest.fn();
+    const mappedProps = mapDispatchToProps(mockDispatch);
+    const actionToDispatch = action.addFilterResults({name: 'Delicious'}, {name: 'Would eat again'});
+    mappedProps.addFilterResults({name: 'Delicious'}, {name: 'Would eat again'});
+    expect(mockDispatch).toBeCalledWith(actionToDispatch);
+  });
+
+  it('should call dispatch with fetchResults', () => {
+    const mockDispatch = jest.fn();
+    const mappedProps = mapDispatchToProps(mockDispatch);
+    const actionToDispatch = fetchResults('www.someUrl');
+    mappedProps.fetchResults('www.someUrl');
+    expect(mockDispatch).toBeCalledWith(actionToDispatch);
+  })
 })
