@@ -1,3 +1,6 @@
+$orange: #F89838;
+$pink: #f0586E;
+
 .app {
   text-align: center;
 }
@@ -103,4 +106,8 @@ a {
       margin: 25vh 0 5vh;
     }
   } 
+}
+
+.ui.segment {
+  opacity: 0;
 }

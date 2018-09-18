@@ -7,4 +7,4 @@ export const rootReducer = combineReducers({
   filterResults: filterReducer,
   isLoading,
   hasErrored
-})
+});

@@ -4,7 +4,6 @@ import { withRouter, NavLink, Route } from 'react-router-dom';
 import Search from '../Search/Search';
 import FormulaContainer from '../FormulaContainer/FormulaContainer';
 import './Form.css'; 
-import PropTypes from 'prop-types';
 
 export class Form extends Component {
   render() {
@@ -16,10 +15,6 @@ export class Form extends Component {
       </div>
     );
   }
-}
-
-Form.propTypes = {
-  
 }
 
 export default withRouter((Form));

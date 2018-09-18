@@ -1,5 +1,6 @@
 import {isLoading, hasErrored, filterResultFetchDataSuccess} from '../actions';
 
+
 export const fetchResults = (url) => {
   return async (dispatch) => {
     try {

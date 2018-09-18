@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import { fetchResults } from '../../thunks/fetchResults';
 import { withRouter, NavLink } from 'react-router-dom';
+import { addFilterResults } from '../../actions';
+import { Input} from 'semantic-ui-react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { Dropdown, Input, Button, Select } from 'semantic-ui-react';
-import { searchCriteria } from '../../formData'
 import './Search.css';
 
 class Search extends Component {
@@ -11,21 +12,20 @@ class Search extends Component {
 		super()
 
 		this.state = {
-			input: '',
-			criteria: ''
+			input: ''
 		}
 	}
 
-	handleSubmit = (event) => {
-		event.preventDefault()
-	}
-
-	handleChange = (event, data) => {
-		this.setState({criteria: data.value})
+	handleSubmit = async (event) => {
+		event.preventDefault();
+		let keyWord = this.state.input.replace(/\s/g, '');
+		let url = `https://nurish-app.herokuapp.com/api/v1/search?key_word=${keyWord}`;
+		await this.props.fetchResults(url);
+		this.props.history.push('/formulas');
 	}
 
 	handleInput = (input) => {
-		this.setState({input})
+		this.setState({input});
 	}
 
 	render() {		
@@ -37,18 +37,32 @@ class Search extends Component {
 					<NavLink to='/formulas'>browse</NavLink>
 				</div>
 				<form className='search-field' onSubmit={this.handleSubmit}>
-					<Input 
-				  	type='text'
-				  	placeholder='enter your criteria' 
-				  	action >
-				  	<input onChange={(event) => this.handleInput(event.target.value)} value={this.state.value} name='input'/>
-				  	<Select onChange={this.handleChange} defaultValue={'name'} compact options={searchCriteria} name='criteria'/>
-				  	<Button type='submit'>Search</Button>
-					</Input>
+			  	<Input 
+			  		action='Search'
+			  		onChange={(event) => this.handleInput(event.target.value)}
+			  		value={this.state.value}
+			  		placeholder='enter your criteria' 
+		  		/>
 				</form>
 			</div>
 		)
 	}
 }
 
-export default withRouter(Search);
+export const mapStateToProps = (state) => ({
+	filterResults: state.filterResults,
+	isLoading: state.isLoading,
+  hasErrored: state.hasErrored
+});
+
+export const mapDispatchToProps = (dispatch) => ({
+	addFilterResults: (filterResults) => dispatch(addFilterResults(filterResults)),
+	fetchResults: (url) =>  dispatch(fetchResults(url))
+});
+
+Search.propTypes = {
+  filterResults: PropTypes.array,
+  fetchResults: PropTypes.func
+};
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Search));

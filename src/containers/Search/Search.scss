@@ -29,7 +29,7 @@ div {
 .search-field {
 	& .ui {
 		& .button {
-			background-color: #FFF;
+			background-color: $orange;
 			border-style: solid solid solid none;
 			border: 1px solid rgba(34, 36, 38, .15);
 		}
