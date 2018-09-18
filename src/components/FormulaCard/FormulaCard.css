@@ -15,14 +15,16 @@ h2 {
 .box .line-clamp-box {
   font-size: 1rem;
   text-align: left;
-  height: 100px; }
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden; }
 
 #paragraph {
   -webkit-box-orient: vertical;
   display: -webkit-box;
   -webkit-line-clamp: 5;
-  overflow: hidden;
-  line-height: 1.45; }
+  overflow: hidden; }
 
 ul {
   padding: 0;
