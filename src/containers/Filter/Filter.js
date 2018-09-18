@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter, NavLink } from 'react-router-dom';
+import FormulaContainer from '../FormulaContainer/FormulaContainer';
+import { withRouter, NavLink, Link } from 'react-router-dom';
 import { Dropdown, Input, Button } from 'semantic-ui-react';
 import { addFilterResults } from '../../actions';
 import { fetchResults } from '../../thunks/fetchResults';
@@ -29,6 +30,8 @@ class Filter extends Component {
 		let mctParam = mctQuery.length ? '&mct_lct=' : '';
 		let url = `https://nurish-app.herokuapp.com/api/v1/formulas?${allergenParam}${allergenQuery}${specialtyParam}${specialtyQuery}${mctParam}${mctQuery}`
 		const response = await this.props.fetchResults(url)
+		console.log(this.props)
+		// this.props.history.push('/formulas')
 		return response
 	}
 
