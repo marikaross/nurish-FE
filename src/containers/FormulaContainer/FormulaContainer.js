@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
 import { withRouter, NavLink } from 'react-router-dom';
-import { formulas } from '../../data-helper/mockFormula.js';
 import { FormulaCard } from '../../components/FormulaCard/FormulaCard';
-import './FormulaContainer.css';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-
+import './FormulaContainer.css';
 
 export class FormulaContainer extends Component {
 
   componentDidMount() {
-    this.props.animateLogo('collapse-logo')
+    this.props.animateLogo('collapse-logo');
   }
 
   componentWillUnmount() {
-    this.props.animateLogo('expand-logo')
+    this.props.animateLogo('expand-logo');
   }
 
   filterResultCard = () => {
@@ -24,9 +22,8 @@ export class FormulaContainer extends Component {
             key={formula.id}
             {...formula}
           />
-          )
-      })
-
+        )
+    })
   }
 
   FormulaCard = () => {
@@ -36,8 +33,8 @@ export class FormulaContainer extends Component {
             key={formula.id}
             {...formula}
           />
-          )
-      })
+        )
+    })
   }
 
 
@@ -61,6 +58,11 @@ export class FormulaContainer extends Component {
 export const mapStateToProps = (state) => ({
   formulas: state.formulas,
   filterResults: state.filterResults
-})
+});
+
+FormulaContainer.propTypes = {
+  formulas: PropTypes.arr,
+  filterResults: PropTypes.arr
+};
 
 export default withRouter(connect(mapStateToProps, null)(FormulaContainer));
