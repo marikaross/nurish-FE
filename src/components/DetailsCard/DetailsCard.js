@@ -69,7 +69,7 @@ class DetailsCard extends Component {
   }
 	
 	usageGuidelines = () => {
-    return formula.usage.map(use => {
+    return this.props.formula.usage.split(',').map(use => {
       return (
           <li>{use}</li>
         );
@@ -130,10 +130,10 @@ class DetailsCard extends Component {
           <NavLink to='/formulas'>browse</NavLink>
         </div>
         <div className='single-card'>
-        	<h1 className='formula-title'>{title}</h1>
+        	<h1 className='formula-title'>{this.props.formula.name}</h1>
         	<img className='formula-image' src='https://github.com/jeremiahjstanley/pattrn-party/blob/master/css-resources/placeholder.png?raw=true'/>
         	<p className='single-formula-description'>
-        		{description}
+        		{this.props.formula.description}
         	</p>
         	<h2 className='nutritional-management-header'>
         		for the nutritional management of:
