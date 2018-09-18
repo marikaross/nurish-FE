@@ -15,13 +15,18 @@ export const FormulaCard = (formula) => {
   };
 
   return (
-    <Link className="formula-link" to={`/formulas/${formula.id}`}>
+    <Link className='formula-link' to={`/formulas/${formula.id}`}>
       <div className='formula-card' key={`formula-card-${formula.id}`}>
-        <h2>{formula.name}</h2>
-        <div className='box'>
-          <p className='line-clamp-box' id='paragraph'>{formula.description}</p>
+        <h2>{formula.title}</h2>
+        <div className='formula-description'>
+          <p className='truncate-description'>{formula.description}</p>
         </div>
-        <ul>usage: {usageGuidelines()}</ul>
+        <p className='usage-header'>
+          <strong>usage:</strong>
+        </p>
+        <ul>
+          {usageGuidelines()}
+        </ul>
       </div>
     </Link>
   );
