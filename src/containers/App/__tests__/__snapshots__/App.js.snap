@@ -53,11 +53,6 @@ ShallowWrapper {
           path="/search"
 />,
         <Route
-          component={[Function]}
-          exact={true}
-          path="/calculate"
-/>,
-        <Route
           exact={true}
           path="/formulas"
           render={[Function]}
@@ -128,19 +123,6 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "component": [Function],
-          "exact": true,
-          "path": "/calculate",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
           "exact": true,
           "path": "/formulas",
           "render": [Function],
@@ -190,11 +172,6 @@ ShallowWrapper {
             component={[Function]}
             exact={true}
             path="/search"
-/>,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/calculate"
 />,
           <Route
             exact={true}
@@ -257,19 +234,6 @@ ShallowWrapper {
             "component": [Function],
             "exact": true,
             "path": "/search",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/calculate",
           },
           "ref": null,
           "rendered": null,

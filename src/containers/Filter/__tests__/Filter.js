@@ -34,6 +34,18 @@ describe('Filter', () => {
     expect(wrapper).toMatchSnapshot()
   });
 
+  it('should update state after handleSpecialty runs', () => {
+
+  });
+
+  it('should update state after handleMCT runs', () => {
+
+  });
+
+  it('should update state after handleAllergens runs', () => {
+    
+  })
+
   it('should return a filterResults array', () => {
     const mockState = {
       filterResults: mockFilterResults,
