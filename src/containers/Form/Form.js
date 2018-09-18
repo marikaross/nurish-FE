@@ -6,7 +6,7 @@ import FormulaContainer from '../FormulaContainer/FormulaContainer';
 import './Form.css'; 
 import PropTypes from 'prop-types';
 
-class Form extends Component {
+export class Form extends Component {
   render() {
     return (
       <div className="form-container links">
