@@ -45,3 +45,15 @@ export const formulas = [
     "restrictions": "CONTAINS MILK AND SOY"
   }
 ]
+
+export const oneFormula = [
+  {
+    "id": 1,
+    "title": "Beneprotein",
+    "description": 'Beneprotein instant protein powder is a modular whey protein source. Each 7 g serving provides 6 g of protein. It can be added to most foods, liquids, and as a "protein flush" with tube feedings',
+    "usage": ["Increased protein requirements"],
+    "ingredients": "WHEY PROTEIN ISOLATE (MILK), SOY LECITHIN",
+    "HCPC": "B4155",
+    "restrictions": ["CONTAINS MILK AND SOY"]
+  }
+]
