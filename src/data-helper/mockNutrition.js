@@ -1,4 +1,4 @@
-{
+const mockNutritionData = {
   1: {
   "Calories": {
     "7 g*": 25,

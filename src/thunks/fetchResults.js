@@ -1,4 +1,5 @@
-import { isLoading, hasErrored, filterResultFetchDataSuccess } from '../actions';
+import {isLoading, hasErrored, filterResultFetchDataSuccess} from '../actions';
+
 
 export const fetchResults = (url) => {
   return async (dispatch) => {

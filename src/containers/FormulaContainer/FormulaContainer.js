@@ -55,6 +55,12 @@ export class FormulaContainer extends Component {
   }
 }
 
+FormulaContainer.propTypes = {
+  filterResults: PropTypes.array,
+  formulas: PropTypes.array,
+  animateLogo: PropTypes.func
+};
+
 export const mapStateToProps = (state) => ({
   formulas: state.formulas,
   filterResults: state.filterResults

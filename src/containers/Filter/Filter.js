@@ -8,7 +8,7 @@ import { addFilterResults } from '../../actions';
 import PropTypes from 'prop-types';
 import './Filter.css';
 
-class Filter extends Component {
+export class Filter extends Component {
 	constructor() {
 		super()
 

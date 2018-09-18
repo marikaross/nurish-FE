@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Form />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <NavLink
+          activeClassName="active"
+          aria-current="page"
+          to="/search"
+>
+          search
+</NavLink>,
+        <NavLink
+          activeClassName="active"
+          aria-current="page"
+          to="/filter"
+>
+          filter
+</NavLink>,
+        <NavLink
+          activeClassName="active"
+          aria-current="page"
+          to="/formulas"
+>
+          browse
+</NavLink>,
+      ],
+      "className": "form-container links",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "aria-current": "page",
+          "children": "search",
+          "to": "/search",
+        },
+        "ref": null,
+        "rendered": "search",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "aria-current": "page",
+          "children": "filter",
+          "to": "/filter",
+        },
+        "ref": null,
+        "rendered": "filter",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "aria-current": "page",
+          "children": "browse",
+          "to": "/formulas",
+        },
+        "ref": null,
+        "rendered": "browse",
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/search"
+>
+            search
+</NavLink>,
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/filter"
+>
+            filter
+</NavLink>,
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/formulas"
+>
+            browse
+</NavLink>,
+        ],
+        "className": "form-container links",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "aria-current": "page",
+            "children": "search",
+            "to": "/search",
+          },
+          "ref": null,
+          "rendered": "search",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "aria-current": "page",
+            "children": "filter",
+            "to": "/filter",
+          },
+          "ref": null,
+          "rendered": "filter",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "aria-current": "page",
+            "children": "browse",
+            "to": "/formulas",
+          },
+          "ref": null,
+          "rendered": "browse",
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
