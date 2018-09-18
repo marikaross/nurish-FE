@@ -13,9 +13,9 @@ export const formulaFetchDataSuccess = (formulas) => ({
   formulas
 })
 
-export const filterResultFetchDataSuccess = (results) => ({
+export const filterResultFetchDataSuccess = (filterResults) => ({
   type: 'FILTER_RESULT_FETCH_DATA_SUCCESS',
-  results
+  filterResults
 })
 
 export const isLoading = (bool) => ({

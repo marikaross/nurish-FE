@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import FormulaContainer from '../FormulaContainer/FormulaContainer';
 import { mctSplit, allergies, specialties } from '../../formData';
 import { Dropdown, Button } from 'semantic-ui-react';
 import { fetchResults } from '../../thunks/fetchResults';
@@ -25,11 +26,13 @@ class Filter extends Component {
 		let specialtyQuery = this.state.specialty.length ? this.state.specialty.join() : '';
 		let mctQuery = this.state.mct.length ? this.state.mct.join() : '';
 		let allergenParam = allergenQuery.length ? '&allergens=' : '';
-		let specialtyParam = specialtyQuery.length ? '&specialty=' : '';
-		let mctParam = allergenQuery.length ? '&mct_lct=' : '';
-		let url = `https://nurish-app.herokuapp.com/api/v1/formulas?${allergenParam}${allergenQuery}${specialtyParam}${specialtyQuery}${mctParam}${mctQuery}`;
-		const response = await fetch(url)
-		return await response.json()
+		let specialtyParam = specialtyQuery.length ? '&type=' : '';
+		let mctParam = mctQuery.length ? '&mct_lct=' : '';
+		let url = `https://nurish-app.herokuapp.com/api/v1/formulas?${allergenParam}${allergenQuery}${specialtyParam}${specialtyQuery}${mctParam}${mctQuery}`
+		const response = await this.props.fetchResults(url)
+		console.log(this.props)
+		// this.props.history.push('/formulas')
+		return response
 	}
 
 	handleSpecialty = (event, data) => {
