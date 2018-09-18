@@ -2,6 +2,7 @@
 div {
 	& .search-container {
 			animation: grow-search 1s;
+			min-width: 30rem;
 			width: 45%;
 			@keyframes grow-search {
 	  
