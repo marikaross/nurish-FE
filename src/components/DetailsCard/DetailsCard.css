@@ -1,18 +1,18 @@
 .details-card {
   animation: shrink-container 1s;
   background-color: rgba(255, 255, 255, 0.2);
-  width: 65%;
+  width: 70%;
   border-radius: 30px;
   color: #FFF;
   margin: 0 auto 6rem;
   min-width: 20rem;
-  padding: 1.5rem; }
+  padding: 1.5rem 1.5rem 3rem; }
 
 @keyframes shrink-container {
   0% {
     width: 85%; }
   100% {
-    width: 65%; } }
+    width: 70%; } }
 
 .single-card {
   display: grid;
@@ -23,13 +23,17 @@
   margin-top: 1.5rem;
   text-align: left; }
 
-.single-card ul {
-  list-style: none;
-  padding: 0; }
-
 .single-card h2 {
   font-size: 1.25rem;
   margin: .5rem 0; }
+
+.single-card ul {
+  list-style: none;
+  padding: 0;
+  margin: .5rem 0; }
+
+.single-card li {
+  margin: .3rem 0; }
 
 .formula-title {
   align-self: center;
@@ -53,19 +57,13 @@
   grid-column: 1; }
 
 .usage-guidelines {
-  display: grid;
-  grid-auto-flow: column;
-  grid-column: 1;
-  grid-template-rows: 25% 25% 25% 25%; }
+  grid-column: 1; }
 
 .features-header {
   grid-column: 1; }
 
 .features-table {
-  display: grid;
-  grid-auto-flow: column;
-  grid-column: 1;
-  grid-template-rows: 25% 25% 25% 25%; }
+  grid-column: 1; }
 
 .nutritional-information-header {
   align-self: center;
