@@ -2,7 +2,7 @@ import {App, mapStateToProps, mapDispatchToProps} from '../App';
 import React from 'react';
 import { shallow } from 'enzyme';
 import * as action from '../../../actions';
-import { fetchCheese } from '../../../thunks/fetchFormula';
+import { fetchFormula } from '../../../thunks/fetchFormula';
 
 jest.mock('../../../thunks/fetchFormula');
 
@@ -60,6 +60,14 @@ describe('App', () => {
     const mappedProps = mapDispatchToProps(mockDispatch);
     const actionToDispatch = action.addFormulas({name: 'smoothie-town'});
     mappedProps.addFormulas({name: 'smoothie-town'});
-    expect(mockDispatch).toBeCalledWith(actionToDispatch)
+    expect(mockDispatch).toBeCalledWith(actionToDispatch);
+  });
+
+  it('should call dispatch with fetchFormula', () => {
+    const mockDispatch = jest.fn();
+    const mappedProps = mapDispatchToProps(mockDispatch);
+    const actionToDispatch = fetchFormula('www.fakeURL');
+    mappedProps.fetchFormula('www.fakeURL');
+    expect(mockDispatch).toBeCalledWith(actionToDispatch);
   })
 })
