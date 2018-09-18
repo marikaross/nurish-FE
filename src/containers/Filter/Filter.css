@@ -1,6 +1,7 @@
 div .filter-container {
   animation: grow-filter 1s;
   height: 375px;
+  min-width: 30rem;
   width: 45%; }
 
 @keyframes grow-filter {

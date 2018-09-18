@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter, Route } from 'react-router-dom';
-import Form from '../Form/Form';
-import Search from '../Search/Search';
-import FormulaContainer from '../FormulaContainer/FormulaContainer';
-import Calculate from '../Calculate/Calculate';
-import DetailsCard from '../../components/DetailsCard/DetailsCard';
-import Filter from '../Filter/Filter';
-import './App.css';
 import PropTypes from 'prop-types';
-import { addFormulas } from '../../actions';
+import FormulaContainer from '../FormulaContainer/FormulaContainer';
+import DetailsCard from '../../components/DetailsCard/DetailsCard';
 import { fetchFormula } from '../../thunks/fetchFormula.js';
+import { addFormulas } from '../../actions';
+import Calculate from '../Calculate/Calculate';
+import Filter from '../Filter/Filter';
+import Search from '../Search/Search';
+import Form from '../Form/Form';
+import './App.css';
 
 class App extends Component {
   constructor() {
@@ -29,13 +29,13 @@ class App extends Component {
   animateLogo = (position) => {
     switch (position) {
       case 'collapse-logo':
-        this.setState({position})
+        this.setState({position});
         break;
       case 'expand-logo':
-        this.setState({position})
+        this.setState({position});
         break;
       default:
-        this.setState({position: 'expand-logo'})
+        this.setState({position: 'expand-logo'});
     }
   }
 
@@ -78,4 +78,5 @@ App.propTypes = {
   fetchFormula: PropTypes.func,
   formula: PropTypes.func
 };
+
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

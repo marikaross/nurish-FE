@@ -130,11 +130,14 @@ class DetailsCard extends Component {
           <NavLink to='/formulas'>browse</NavLink>
         </div>
         <div className='single-card'>
-        	<h1 className='formula-title'>{this.props.formula.name}</h1>
+        	<h1 className='formula-title'>{this.props.formula.title}</h1>
         	<img className='formula-image' src='https://github.com/jeremiahjstanley/pattrn-party/blob/master/css-resources/placeholder.png?raw=true'/>
         	<p className='single-formula-description'>
         		{this.props.formula.description}
         	</p>
+          <p className='single-formula-restrictions'>
+            <strong>{this.props.formula.restrictions}</strong>
+          </p>
         	<h2 className='nutritional-management-header'>
         		for the nutritional management of:
         	</h2>
@@ -155,7 +158,7 @@ class DetailsCard extends Component {
     				{this.nutritionalTable()}
     			</ul>
     			<p className='ingredients-text'><span className='ingredients-title'><strong>ingredients: </strong></span>
-    				{ingredients}
+    				{this.props.formula.ingredients}
     			</p>
         </div>
       </div>

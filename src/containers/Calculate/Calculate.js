@@ -16,7 +16,6 @@ class Calculate extends Component {
 		event.preventDefault()
 	}
 
-
 	render() {
 		return (
 			<div className='form-container'>

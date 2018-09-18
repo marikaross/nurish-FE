@@ -5,6 +5,7 @@
   border-radius: 30px;
   color: #FFF;
   margin: 0 auto 6rem;
+  max-width: 80rem;
   min-width: 20rem;
   padding: 1.5rem 1.5rem 3rem; }
 
@@ -29,11 +30,14 @@
 
 .single-card ul {
   list-style: none;
-  padding: 0;
-  margin: .5rem 0; }
+  margin: .5rem 0;
+  padding: 0; }
 
 .single-card li {
   margin: .3rem 0; }
+
+.single-card p {
+  text-transform: lowercase; }
 
 .formula-title {
   align-self: center;
@@ -48,20 +52,20 @@
   max-width: 20rem;
   width: 100%; }
 
-.single-formula-description {
+.single-formula-description,
+.single-formula-restrictions {
   grid-column: 1;
-  margin: 0; }
+  margin-bottom: .5rem; }
+
+.single-formula-restrictions {
+  margin-bottom: 1rem; }
 
 .nutritional-management-header {
   align-self: center;
   grid-column: 1; }
 
-.usage-guidelines {
-  grid-column: 1; }
-
-.features-header {
-  grid-column: 1; }
-
+.usage-guidelines,
+.features-header,
 .features-table {
   grid-column: 1; }
 
@@ -105,5 +109,4 @@
 
 .ingredients-text {
   grid-column: 2;
-  grid-row: 3 / 8;
-  text-transform: lowercase; }
+  grid-row: 3 / 9; }
