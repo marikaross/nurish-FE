@@ -12,7 +12,7 @@ import Search from '../Search/Search';
 import Form from '../Form/Form';
 import './App.css';
 
-class App extends Component {
+export class App extends Component {
   constructor() {
     super()
 
