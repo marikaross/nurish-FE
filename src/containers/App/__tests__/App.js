@@ -12,13 +12,13 @@ describe('App', () => {
   let mockIsLoading
   let mockHasErrored
   let mockFetchFormula
-  let mockAddFormula
+  let mockAddFormulas
 
 
   beforeEach(() => {
     mockFormulas = [{title: 'boost'}, { title: 'smoothie'}];
     mockFetchFormula = jest.fn();
-    mockAddFormula = jest.fn();
+    mockAddFormulas = jest.fn();
     mockHasErrored = false
     mockIsLoading = true
 
@@ -27,14 +27,39 @@ describe('App', () => {
       isLoading={mockIsLoading}
       hasErrored={mockHasErrored}
       fetchFormula={mockFetchFormula}
-      addFormula={mockAddFormula}/>)
+      addFormulas={mockAddFormulas}/>)
   })
 
-  it('renders without crashing', () => {
-    expect(true).toEqual(true);
-  });
 
   it('should match the snapShot', () => {
-      expect(wrapper).toMatchSnapshot()
+      expect(wrapper).toMatchSnapshot();
   });
+
+  it('should return a formulas array', () => {
+    const mockState = {
+      formulas: mockFormulas,
+      addFormulas: mockAddFormulas
+    };
+
+    const expectedProps = {
+      formulas: mockFormulas
+    };
+
+    const mappedProps = mapStateToProps(mockState);
+    expect(mappedProps).toEqual(expectedProps);
+  });
+
+  it('should call dispatch with addFormula', () => {
+    const mockState = {
+      forumlas: mockFormulas,
+      addFormulas: mockAddFormulas,
+      fetchFormula: mockFetchFormula
+    };
+
+    const mockDispatch = jest.fn();
+    const mappedProps = mapDispatchToProps(mockDispatch);
+    const actionToDispatch = action.addFormulas({name: 'smoothie-town'});
+    mappedProps.addFormulas({name: 'smoothie-town'});
+    expect(mockDispatch).toBeCalledWith(actionToDispatch)
+  })
 })

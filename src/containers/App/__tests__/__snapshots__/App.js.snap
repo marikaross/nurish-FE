@@ -4,7 +4,7 @@ exports[`App should match the snapShot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App
-    addFormula={[Function]}
+    addFormulas={[Function]}
     fetchFormula={[Function]}
     formulas={
         Array [
