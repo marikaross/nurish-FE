@@ -1,11 +1,11 @@
-import { formulaReducer, isLoading, hasErrored } from '../formulaReducer';
+import { formulaReducer, singleFormulaReducer, isLoading, hasErrored } from '../formulaReducer';
 import * as action from '../../actions';
 
 describe('formulaReducer', () => {
 
   it('should return the initial state when the action is undefined', () => {
     const expected = [];
-    const result = formulaReducer([], {});
+    const result = formulaReducer(undefined, {});
     expect(result).toEqual(expected);
   });
 
@@ -25,27 +25,47 @@ describe('formulaReducer', () => {
     expect(result).toEqual(expected);
   });
 
-  it('should return a single formula object when the type is SINGLE_FORMULA_FETCH_DATA_SUCCESS', async () => {
-    const initialState = {};
-    const formula = {title: 'sandwich'}
-    const expected = {}
-    const result = await formulaReducer(initialState, action.singleFormulaFetchDataSuccess(formula));
+  it('should return the initial state when the action is undefined', () => {
+    const expected = {};
+    const result = singleFormulaReducer(undefined, {});
     expect(result).toEqual(expected);
-  })
+  });
+
+  it('should add formulas to the state when the type is SINGLE_FORMULA_FETCH_DATA_SUCCESS', () => {
+    const initialState = {};
+    const expected = {title: 'Beneprotein'};
+    const result = singleFormulaReducer(initialState, action.singleFormulaFetchDataSuccess(expected));
+    expect(result).toEqual(expected);
+  });
+  
 });
 
 describe('isLoading', () => {
+
+  it('should return the initial state when the action is undefined', () => {
+    const expected = false;
+    const result = isLoading(undefined, {});
+    expect(result).toEqual(expected);
+  });
+
   it('should return a boolean', () => {
     const expected = false;
-    const result = isLoading(false, action.isLoading);
+    const result = isLoading(false, action.isLoading(false));
     expect(result).toEqual(expected);
   });
 });
 
 describe('hasErrored', () => {
+
+  it('should return the initial state when the action is undefined', () => {
+    const expected = false;
+    const result = hasErrored(undefined, {});
+    expect(result).toEqual(expected);
+  });
+
   it('should return a boolean', () => {
     const expected = false;
-    const result = hasErrored(false, action.hasErrored);
+    const result = hasErrored(false, action.hasErrored(false));
     expect(result).toEqual(expected);
   });
 });
