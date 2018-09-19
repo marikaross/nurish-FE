@@ -10,26 +10,26 @@ import './Filter.css';
 
 export class Filter extends Component {
 	constructor() {
-		super()
+		super();
 
 		this.state = {
 			allergens: [],
 			specialty: [],
 			mct: []
-		}
+		};
 	}
 
 	handleSubmit = async (event) => {
-		event.preventDefault()	
+		event.preventDefault();	
 		let allergenQuery = this.state.allergens.length ? this.state.allergens.join() : '';
 		let specialtyQuery = this.state.specialty.length ? this.state.specialty.join() : '';
 		let mctQuery = this.state.mct.length ? this.state.mct.join() : '';
 		let allergenParam = allergenQuery.length ? '&allergens=' : '';
 		let specialtyParam = specialtyQuery.length ? '&type=' : '';
 		let mctParam = mctQuery.length ? '&mct_lct=' : '';
-		let url = `https://nurish-app.herokuapp.com/api/v1/formulas?${allergenParam}${allergenQuery}${specialtyParam}${specialtyQuery}${mctParam}${mctQuery}`
-		await this.props.fetchResults(url)
-		this.props.history.push('/formulas')
+		let url = `https://nurish-app.herokuapp.com/api/v1/formulas?${allergenParam}${allergenQuery}${specialtyParam}${specialtyQuery}${mctParam}${mctQuery}`;
+		await this.props.fetchResults(url);
+		this.props.history.push('/formulas');
 	}
 
 	handleSpecialty = (event, data) => {
@@ -56,10 +56,10 @@ export class Filter extends Component {
 					<Dropdown onChange={this.handleSpecialty} placeholder='specialty' fluid search selection options={specialties}/>
 					<Dropdown onChange={this.handleAllergens} placeholder='allergies' fluid multiple search selection options={allergies}/>
 					<Dropdown onChange={this.handleMCT} placeholder='mct split' fluid selection options={mctSplit}/>
-    			<Button fluid>Search</Button>
+					<Button fluid>Search</Button>
 				</form>
 			</div>
-		)
+		);
 	}
 }
 
@@ -77,6 +77,7 @@ export const mapDispatchToProps = (dispatch) => ({
 Filter.propTypes = {
   filterResults: PropTypes.array,
   fetchResults: PropTypes.func,
+  history: PropTypes.object
 };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Filter));
