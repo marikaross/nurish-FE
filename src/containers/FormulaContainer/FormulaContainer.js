@@ -22,8 +22,8 @@ export class FormulaContainer extends Component {
             key={formula.id}
             {...formula}
           />
-        )
-    })
+        );
+    });
   }
 
   FormulaCard = () => {
@@ -33,23 +33,23 @@ export class FormulaContainer extends Component {
             key={formula.id}
             {...formula}
           />
-        )
-    })
+        );
+    });
   }
 
   render() {
-  	return (
-  		<div className='form-container formula-container'>
+    return (
+      <div className='form-container formula-container'>
         <div className='link-container'>
           <NavLink to='/'>back</NavLink>
-  			  <NavLink to='/search'>search</NavLink>
+          <NavLink to='/search'>search</NavLink>
           <NavLink to='/filter'>filter</NavLink>
         </div>
         <div className='formula-cards'>
           {this.props.filterResults.length ? this.filterResultCard() : this.FormulaCard()}
         </div>
-  		</div>
-  	)
+      </div>
+    );
   }
 }
 
