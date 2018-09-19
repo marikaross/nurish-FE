@@ -93,7 +93,7 @@ class DetailsCard extends Component {
 
   render() {
     if (this.state.formula.usage) {
-      let url = `https://raw.githubusercontent.com/shebesabrina/Nurish-BE/images/public/formula%20images/${this.props.formula.image}`
+      let url = `/images/${this.props.formula.image}`
       return (
         <div className='details-card'>
           <div className='link-container'>
