@@ -14,11 +14,11 @@ import './App.css';
 
 export class App extends Component {
   constructor() {
-    super()
+    super();
 
       this.state = {
         position: 'initial-logo'
-      }
+      };
   }
 
   async componentDidMount() {
@@ -40,7 +40,7 @@ export class App extends Component {
   }
 
   render() {
-    const classes = `nurish-logo ${this.state.position}`
+    const classes = `nurish-logo ${this.state.position}`;
     return (
       <div className='app'>
         <img className={classes} alt='nurish-logo' src='/images/nurish-logo.gif'/>
@@ -76,9 +76,9 @@ export const mapDispatchToProps = (dispatch) => ({
 App.propTypes = {
   formulas: PropTypes.array,
   fetchFormula: PropTypes.func,
+  isLoading: PropTypes.bool,
   formula: PropTypes.object,
-  addFormulas: PropTypes.func,
-  fetchFormula: PropTypes.func
+  addFormulas: PropTypes.func
 };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
