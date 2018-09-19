@@ -1,5 +1,5 @@
-import React from 'react'
-import { Dimmer, Loader, Segment } from 'semantic-ui-react'
+import React from 'react';
+import { Dimmer, Loader, Segment } from 'semantic-ui-react';
 
 export const Load = () => (
     <Segment>
@@ -7,6 +7,6 @@ export const Load = () => (
         <Loader size='large'>Loading</Loader>
       </Dimmer>
     </Segment>
-)
+);
 
 export default Load;
