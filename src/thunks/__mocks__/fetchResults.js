@@ -1,0 +1,1 @@
+export const fetchResults = jest.fn();
