@@ -5,7 +5,7 @@ import './FormulaCard.css';
 
 export const FormulaCard = (formula) => {
   const usageGuidelines = () => {
-    let usageArray = formula.usage.split(',')
+    let usageArray = formula.usage.split(',');
     return usageArray.map(usage => {
       return (
         <li key={`formula-card-${formula.id}-/${usage}`}>{usage}</li>
@@ -13,7 +13,7 @@ export const FormulaCard = (formula) => {
     });
   };
 
-  let url = `/images/${formula.image}`
+  let url = `/images/${formula.image}`;
 
   return (
     <Link className='formula-link' to={`/formulas/${formula.id}`}>
@@ -40,5 +40,5 @@ FormulaCard.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   usage: PropTypes.string,
-  image: PropTypes.string,
+  image: PropTypes.string
 };
