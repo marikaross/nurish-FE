@@ -27,11 +27,38 @@ describe('FormulaContainer', () => {
       />);
   });
 
-  it('should match the snapshot', () => {
-    expect(wrapper).toMatchSnapshot()
-  })
+  it('should match the snapshot when there are filtered results', () => {
+    let mockFormulas = [{title: 'boost'}, { title: 'smoothie'}];
 
-    it('should return a filterResults array', () => {
+    wrapper = shallow(<FormulaContainer
+      formulaCard={mockFormulaCard}
+      filterResultCard={mockFilterResultCard}
+      filterResults={[]}
+      mockAddFilterResults={mockAddFilterResults}
+      formulas={mockFormulas}
+      animateLogo={mockAnimateLogo}
+      />);
+
+    expect(wrapper).toMatchSnapshot()
+  });
+
+  it('should match the snapshot when there are no filtered results', () => {
+    expect(wrapper).toMatchSnapshot()
+  });
+
+  it('should call animateLogo when mounted', () => {
+    wrapper.instance()
+
+    expect(mockAnimateLogo).toHaveBeenCalledWith('collapse-logo')
+  });
+
+  it('should call animateLogo when unmounted', () => {
+    wrapper.instance().componentWillUnmount()
+
+    expect(mockAnimateLogo).toHaveBeenCalledWith('expand-logo')
+  });
+
+  it('should return a filterResults array', () => {
     const mockState = {
       filterResults: mockFilterResults,
       addFilterResults: mockAddFilterResults
