@@ -75,7 +75,7 @@ describe('Search', () => {
     expect(mockFetchResults).toHaveBeenCalledWith(url);
   });
 
-   it.skip('should direct the user to the formulas page of the application', () => {
+   it('should direct the user to the formulas page of the application', () => {
     wrapper.instance().handleInput(mockInput);
 
     wrapper.instance().handleSubmit(mockEvent);
