@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { withRouter, NavLink, Route } from 'react-router-dom';
-import Search from '../Search/Search';
-import FormulaContainer from '../FormulaContainer/FormulaContainer';
+import { NavLink, withRouter } from 'react-router-dom';
 import './Form.css'; 
 
 export class Form extends Component {
