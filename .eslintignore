@@ -1,0 +1,12 @@
+/src/thunks/**/__tests__/*.js
+/src/thunks/**/__mocks__/*.js
+
+/src/reducers/__tests__/
+
+/src/actions/__tests__/
+
+/src/containers/**/__tests__/*.js
+
+/src/components/**/__tests__/*.js
+
+/src/data-helper
