@@ -40,4 +40,24 @@ describe('actions', () => {
     const result = action.formulaFetchDataSuccess(formulas);
     expect(result).toEqual(expected);
   });
+
+  it('should return a type of FILTER_RESULT_FETCH_DATA_SUCCESS and filterResults array', () => {
+    const filterResults = [{}, {}, {}];
+    const expected = {
+      type: "FILTER_RESULT_FETCH_DATA_SUCCESS",
+      filterResults
+    };
+    const result = action.filterResultFetchDataSuccess(filterResults);
+    expect(result).toEqual(expected);
+  });
+
+  it('should return a type of SINGLE_FORMULA_FETCH_DATA_SUCCESS and filterResults array', () => {
+    const formula = {};
+    const expected = {
+      type: "SINGLE_FORMULA_FETCH_DATA_SUCCESS",
+      formula
+    };
+    const result = action.singleFormulaFetchDataSuccess(formula);
+    expect(result).toEqual(expected);
+  });
 });

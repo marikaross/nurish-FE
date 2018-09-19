@@ -24,6 +24,14 @@ describe('formulaReducer', () => {
     const result = await formulaReducer(initialState, action.formulaFetchDataSuccess(formulas));
     expect(result).toEqual(expected);
   });
+
+  it('should return a single formula object when the type is SINGLE_FORMULA_FETCH_DATA_SUCCESS', async () => {
+    const initialState = {};
+    const formula = {title: 'sandwich'}
+    const expected = {}
+    const result = await formulaReducer(initialState, action.singleFormulaFetchDataSuccess(formula));
+    expect(result).toEqual(expected);
+  })
 });
 
 describe('isLoading', () => {
