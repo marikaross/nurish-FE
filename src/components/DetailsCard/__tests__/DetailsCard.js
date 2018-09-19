@@ -4,6 +4,7 @@ import {DetailsCard, mapStateToProps, mapDispatchToProps} from '../DetailsCard.j
 import { fetchSingleFormula } from '../../../thunks/fetchSingleFormula.js';
 import * as action from '../../../actions';
 
+jest.mock('../../../thunks/fetchSingleFormula');
 
 describe('DetailsCard', () => {
   let wrapper
@@ -26,5 +27,25 @@ describe('DetailsCard', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should return a formula object', () => {
+      const mockState = {
+      formula: undefined
+    };
+
+    const expectedProps = {
+      formula: undefined
+    };
+
+    const mappedProps = mapStateToProps(mockState);
+    expect(mappedProps).toEqual(expectedProps);
+  });
+
+  it('should call dispatch with fetchSingleFormula', () => {
+    const mockDispatch = jest.fn();
+    const mappedProps = mapDispatchToProps(mockDispatch);
+    const actionToDispatch = fetchSingleFormula('www.fakeURL');
+    mappedProps.fetchSingleFormula('www.fakeURL');
+    expect(mockDispatch).toBeCalledWith(actionToDispatch);
+  })
   
 })
