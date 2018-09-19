@@ -131,9 +131,9 @@ ShallowWrapper {
                     options={
                               Array [
                                         Object {
-                                          "key": "Gluten",
-                                          "text": "Wheat and/or Gluten",
-                                          "value": "Wheat",
+                                          "key": "Casein",
+                                          "text": "Casein",
+                                          "value": "Casein",
                                         },
                                         Object {
                                           "key": "Corn",
@@ -141,9 +141,24 @@ ShallowWrapper {
                                           "value": "Corn",
                                         },
                                         Object {
+                                          "key": "Dairy",
+                                          "text": "Dairy",
+                                          "value": "Dairy",
+                                        },
+                                        Object {
+                                          "key": "Gluten",
+                                          "text": "Wheat and/or Gluten",
+                                          "value": "Wheat",
+                                        },
+                                        Object {
                                           "key": "Soy",
                                           "text": "Soy",
                                           "value": "Soy",
+                                        },
+                                        Object {
+                                          "key": "Whey",
+                                          "text": "Whey",
+                                          "value": "Whey",
                                         },
                                       ]
                     }
@@ -359,9 +374,9 @@ ShallowWrapper {
               options={
                             Array [
                                           Object {
-                                            "key": "Gluten",
-                                            "text": "Wheat and/or Gluten",
-                                            "value": "Wheat",
+                                            "key": "Casein",
+                                            "text": "Casein",
+                                            "value": "Casein",
                                           },
                                           Object {
                                             "key": "Corn",
@@ -369,9 +384,24 @@ ShallowWrapper {
                                             "value": "Corn",
                                           },
                                           Object {
+                                            "key": "Dairy",
+                                            "text": "Dairy",
+                                            "value": "Dairy",
+                                          },
+                                          Object {
+                                            "key": "Gluten",
+                                            "text": "Wheat and/or Gluten",
+                                            "value": "Wheat",
+                                          },
+                                          Object {
                                             "key": "Soy",
                                             "text": "Soy",
                                             "value": "Soy",
+                                          },
+                                          Object {
+                                            "key": "Whey",
+                                            "text": "Whey",
+                                            "value": "Whey",
                                           },
                                         ]
               }
@@ -513,9 +543,9 @@ ShallowWrapper {
               "openOnFocus": true,
               "options": Array [
                 Object {
-                  "key": "Gluten",
-                  "text": "Wheat and/or Gluten",
-                  "value": "Wheat",
+                  "key": "Casein",
+                  "text": "Casein",
+                  "value": "Casein",
                 },
                 Object {
                   "key": "Corn",
@@ -523,9 +553,24 @@ ShallowWrapper {
                   "value": "Corn",
                 },
                 Object {
+                  "key": "Dairy",
+                  "text": "Dairy",
+                  "value": "Dairy",
+                },
+                Object {
+                  "key": "Gluten",
+                  "text": "Wheat and/or Gluten",
+                  "value": "Wheat",
+                },
+                Object {
                   "key": "Soy",
                   "text": "Soy",
                   "value": "Soy",
+                },
+                Object {
+                  "key": "Whey",
+                  "text": "Whey",
+                  "value": "Whey",
                 },
               ],
               "placeholder": "allergies",
@@ -710,9 +755,9 @@ ShallowWrapper {
                         options={
                                     Array [
                                                 Object {
-                                                  "key": "Gluten",
-                                                  "text": "Wheat and/or Gluten",
-                                                  "value": "Wheat",
+                                                  "key": "Casein",
+                                                  "text": "Casein",
+                                                  "value": "Casein",
                                                 },
                                                 Object {
                                                   "key": "Corn",
@@ -720,9 +765,24 @@ ShallowWrapper {
                                                   "value": "Corn",
                                                 },
                                                 Object {
+                                                  "key": "Dairy",
+                                                  "text": "Dairy",
+                                                  "value": "Dairy",
+                                                },
+                                                Object {
+                                                  "key": "Gluten",
+                                                  "text": "Wheat and/or Gluten",
+                                                  "value": "Wheat",
+                                                },
+                                                Object {
                                                   "key": "Soy",
                                                   "text": "Soy",
                                                   "value": "Soy",
+                                                },
+                                                Object {
+                                                  "key": "Whey",
+                                                  "text": "Whey",
+                                                  "value": "Whey",
                                                 },
                                               ]
                         }
@@ -938,9 +998,9 @@ ShallowWrapper {
                 options={
                                 Array [
                                                 Object {
-                                                  "key": "Gluten",
-                                                  "text": "Wheat and/or Gluten",
-                                                  "value": "Wheat",
+                                                  "key": "Casein",
+                                                  "text": "Casein",
+                                                  "value": "Casein",
                                                 },
                                                 Object {
                                                   "key": "Corn",
@@ -948,9 +1008,24 @@ ShallowWrapper {
                                                   "value": "Corn",
                                                 },
                                                 Object {
+                                                  "key": "Dairy",
+                                                  "text": "Dairy",
+                                                  "value": "Dairy",
+                                                },
+                                                Object {
+                                                  "key": "Gluten",
+                                                  "text": "Wheat and/or Gluten",
+                                                  "value": "Wheat",
+                                                },
+                                                Object {
                                                   "key": "Soy",
                                                   "text": "Soy",
                                                   "value": "Soy",
+                                                },
+                                                Object {
+                                                  "key": "Whey",
+                                                  "text": "Whey",
+                                                  "value": "Whey",
                                                 },
                                               ]
                 }
@@ -1092,9 +1167,9 @@ ShallowWrapper {
                 "openOnFocus": true,
                 "options": Array [
                   Object {
-                    "key": "Gluten",
-                    "text": "Wheat and/or Gluten",
-                    "value": "Wheat",
+                    "key": "Casein",
+                    "text": "Casein",
+                    "value": "Casein",
                   },
                   Object {
                     "key": "Corn",
@@ -1102,9 +1177,24 @@ ShallowWrapper {
                     "value": "Corn",
                   },
                   Object {
+                    "key": "Dairy",
+                    "text": "Dairy",
+                    "value": "Dairy",
+                  },
+                  Object {
+                    "key": "Gluten",
+                    "text": "Wheat and/or Gluten",
+                    "value": "Wheat",
+                  },
+                  Object {
                     "key": "Soy",
                     "text": "Soy",
                     "value": "Soy",
+                  },
+                  Object {
+                    "key": "Whey",
+                    "text": "Whey",
+                    "value": "Whey",
                   },
                 ],
                 "placeholder": "allergies",
