@@ -337,14 +337,16 @@ ShallowWrapper {
                               className="serving-size"
                     >
                               Limitations
-                              : 
+                              :
+                               
                               Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.
                     </span>
                     <span
                               className="serving-size"
                     >
                               Serving size
-                              : 
+                              :
+                               
                               * 1 scoop or packet
                     </span>
           </ul>
@@ -676,14 +678,16 @@ ShallowWrapper {
                             className="serving-size"
               >
                             Limitations
-                            : 
+                            :
+                             
                             Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.
               </span>
               <span
                             className="serving-size"
               >
                             Serving size
-                            : 
+                            :
+                             
                             * 1 scoop or packet
               </span>
 </ul>,
@@ -795,7 +799,7 @@ ShallowWrapper {
             "rendered": Array [
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Increased protein requirements",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Increased protein requirements",
@@ -891,7 +895,7 @@ ShallowWrapper {
               undefined,
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "caloric density",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -910,7 +914,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "protein",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -929,7 +933,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "carbohydrate",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -948,7 +952,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "fat",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -967,7 +971,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "protein source",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -996,7 +1000,7 @@ ShallowWrapper {
               undefined,
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "kosher",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -1015,7 +1019,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "gluten free",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -1035,7 +1039,7 @@ ShallowWrapper {
               undefined,
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "lactose",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -1054,7 +1058,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "low residue",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -1204,14 +1208,16 @@ ShallowWrapper {
                     className="serving-size"
 >
                     Limitations
-                    : 
+                    :
+                     
                     Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.
 </span>,
                   <span
                     className="serving-size"
 >
                     Serving size
-                    : 
+                    :
+                     
                     * 1 scoop or packet
 </span>,
                 ],
@@ -1243,7 +1249,7 @@ ShallowWrapper {
                 "rendered": Array [
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "7 g*",
                     "nodeType": "host",
                     "props": Object {
                       "children": "7 g*",
@@ -1255,7 +1261,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "% Daily Value",
                     "nodeType": "host",
                     "props": Object {
                       "children": "% Daily Value",
@@ -1270,7 +1276,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Calories",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -1308,7 +1314,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Calories",
                     "nodeType": "host",
                     "props": Object {
                       "children": 25,
@@ -1319,7 +1325,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Calories",
                     "nodeType": "host",
                     "props": Object {
                       "children": "",
@@ -1333,7 +1339,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Fat",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -1373,7 +1379,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Fat",
                     "nodeType": "host",
                     "props": Object {
                       "children": "0 g",
@@ -1384,7 +1390,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Fat",
                     "nodeType": "host",
                     "props": Object {
                       "children": "0%",
@@ -1398,7 +1404,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Sodium",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -1438,7 +1444,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Sodium",
                     "nodeType": "host",
                     "props": Object {
                       "children": "15 mg",
@@ -1449,7 +1455,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Sodium",
                     "nodeType": "host",
                     "props": Object {
                       "children": "1%",
@@ -1463,7 +1469,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Potassium",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -1503,7 +1509,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Potassium",
                     "nodeType": "host",
                     "props": Object {
                       "children": "35 mg",
@@ -1514,7 +1520,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Potassium",
                     "nodeType": "host",
                     "props": Object {
                       "children": "2%",
@@ -1528,7 +1534,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Carbohydrate",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -1568,7 +1574,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Carbohydrate",
                     "nodeType": "host",
                     "props": Object {
                       "children": "0 g",
@@ -1579,7 +1585,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Carbohydrate",
                     "nodeType": "host",
                     "props": Object {
                       "children": "0%",
@@ -1593,7 +1599,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Protein",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -1631,7 +1637,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Protein",
                     "nodeType": "host",
                     "props": Object {
                       "children": "6 g",
@@ -1642,7 +1648,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Protein",
                     "nodeType": "host",
                     "props": Object {
                       "children": "",
@@ -1656,7 +1662,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Calcium",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -1694,7 +1700,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Calcium",
                     "nodeType": "host",
                     "props": Object {
                       "children": "",
@@ -1705,7 +1711,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Calcium",
                     "nodeType": "host",
                     "props": Object {
                       "children": "2%",
@@ -1719,12 +1725,13 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Limitations",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
                     "Limitations",
-                    ": ",
+                    ":",
+                    " ",
                     "Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.",
                   ],
                   "className": "serving-size",
@@ -1732,19 +1739,21 @@ ShallowWrapper {
                 "ref": null,
                 "rendered": Array [
                   "Limitations",
-                  ": ",
+                  ":",
+                  " ",
                   "Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.",
                 ],
                 "type": "span",
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Serving size",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
                     "Serving size",
-                    ": ",
+                    ":",
+                    " ",
                     "* 1 scoop or packet",
                   ],
                   "className": "serving-size",
@@ -1752,7 +1761,8 @@ ShallowWrapper {
                 "ref": null,
                 "rendered": Array [
                   "Serving size",
-                  ": ",
+                  ":",
+                  " ",
                   "* 1 scoop or packet",
                 ],
                 "type": "span",
@@ -2063,14 +2073,16 @@ ShallowWrapper {
                                     className="serving-size"
                         >
                                     Limitations
-                                    : 
+                                    :
+                                     
                                     Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.
                         </span>
                         <span
                                     className="serving-size"
                         >
                                     Serving size
-                                    : 
+                                    :
+                                     
                                     * 1 scoop or packet
                         </span>
             </ul>
@@ -2402,14 +2414,16 @@ ShallowWrapper {
                                 className="serving-size"
                 >
                                 Limitations
-                                : 
+                                :
+                                 
                                 Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.
                 </span>
                 <span
                                 className="serving-size"
                 >
                                 Serving size
-                                : 
+                                :
+                                 
                                 * 1 scoop or packet
                 </span>
 </ul>,
@@ -2521,7 +2535,7 @@ ShallowWrapper {
               "rendered": Array [
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Increased protein requirements",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Increased protein requirements",
@@ -2617,7 +2631,7 @@ ShallowWrapper {
                 undefined,
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "caloric density",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -2636,7 +2650,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "protein",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -2655,7 +2669,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "carbohydrate",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -2674,7 +2688,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "fat",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -2693,7 +2707,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "protein source",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -2722,7 +2736,7 @@ ShallowWrapper {
                 undefined,
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "kosher",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -2741,7 +2755,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "gluten free",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -2761,7 +2775,7 @@ ShallowWrapper {
                 undefined,
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "lactose",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -2780,7 +2794,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "low residue",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -2930,14 +2944,16 @@ ShallowWrapper {
                       className="serving-size"
 >
                       Limitations
-                      : 
+                      :
+                       
                       Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.
 </span>,
                     <span
                       className="serving-size"
 >
                       Serving size
-                      : 
+                      :
+                       
                       * 1 scoop or packet
 </span>,
                   ],
@@ -2969,7 +2985,7 @@ ShallowWrapper {
                   "rendered": Array [
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "7 g*",
                       "nodeType": "host",
                       "props": Object {
                         "children": "7 g*",
@@ -2981,7 +2997,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "% Daily Value",
                       "nodeType": "host",
                       "props": Object {
                         "children": "% Daily Value",
@@ -2996,7 +3012,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Calories",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -3034,7 +3050,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Calories",
                       "nodeType": "host",
                       "props": Object {
                         "children": 25,
@@ -3045,7 +3061,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Calories",
                       "nodeType": "host",
                       "props": Object {
                         "children": "",
@@ -3059,7 +3075,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Fat",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -3099,7 +3115,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Fat",
                       "nodeType": "host",
                       "props": Object {
                         "children": "0 g",
@@ -3110,7 +3126,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Fat",
                       "nodeType": "host",
                       "props": Object {
                         "children": "0%",
@@ -3124,7 +3140,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Sodium",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -3164,7 +3180,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Sodium",
                       "nodeType": "host",
                       "props": Object {
                         "children": "15 mg",
@@ -3175,7 +3191,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Sodium",
                       "nodeType": "host",
                       "props": Object {
                         "children": "1%",
@@ -3189,7 +3205,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Potassium",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -3229,7 +3245,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Potassium",
                       "nodeType": "host",
                       "props": Object {
                         "children": "35 mg",
@@ -3240,7 +3256,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Potassium",
                       "nodeType": "host",
                       "props": Object {
                         "children": "2%",
@@ -3254,7 +3270,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Carbohydrate",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -3294,7 +3310,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Carbohydrate",
                       "nodeType": "host",
                       "props": Object {
                         "children": "0 g",
@@ -3305,7 +3321,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Carbohydrate",
                       "nodeType": "host",
                       "props": Object {
                         "children": "0%",
@@ -3319,7 +3335,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Protein",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -3357,7 +3373,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Protein",
                       "nodeType": "host",
                       "props": Object {
                         "children": "6 g",
@@ -3368,7 +3384,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Protein",
                       "nodeType": "host",
                       "props": Object {
                         "children": "",
@@ -3382,7 +3398,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Calcium",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -3420,7 +3436,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Calcium",
                       "nodeType": "host",
                       "props": Object {
                         "children": "",
@@ -3431,7 +3447,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Calcium",
                       "nodeType": "host",
                       "props": Object {
                         "children": "2%",
@@ -3445,12 +3461,13 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Limitations",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
                       "Limitations",
-                      ": ",
+                      ":",
+                      " ",
                       "Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.",
                     ],
                     "className": "serving-size",
@@ -3458,19 +3475,21 @@ ShallowWrapper {
                   "ref": null,
                   "rendered": Array [
                     "Limitations",
-                    ": ",
+                    ":",
+                    " ",
                     "Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.",
                   ],
                   "type": "span",
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Serving size",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
                       "Serving size",
-                      ": ",
+                      ":",
+                      " ",
                       "* 1 scoop or packet",
                     ],
                     "className": "serving-size",
@@ -3478,7 +3497,8 @@ ShallowWrapper {
                   "ref": null,
                   "rendered": Array [
                     "Serving size",
-                    ": ",
+                    ":",
+                    " ",
                     "* 1 scoop or packet",
                   ],
                   "type": "span",
@@ -3958,14 +3978,16 @@ ShallowWrapper {
                               className="serving-size"
                     >
                               Limitations
-                              : 
+                              :
+                               
                               Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.
                     </span>
                     <span
                               className="serving-size"
                     >
                               Serving size
-                              : 
+                              :
+                               
                               * 1 scoop or packet
                     </span>
           </ul>
@@ -4297,14 +4319,16 @@ ShallowWrapper {
                             className="serving-size"
               >
                             Limitations
-                            : 
+                            :
+                             
                             Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.
               </span>
               <span
                             className="serving-size"
               >
                             Serving size
-                            : 
+                            :
+                             
                             * 1 scoop or packet
               </span>
 </ul>,
@@ -4416,7 +4440,7 @@ ShallowWrapper {
             "rendered": Array [
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Increased protein requirements",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Increased protein requirements",
@@ -4512,7 +4536,7 @@ ShallowWrapper {
               undefined,
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "caloric density",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -4531,7 +4555,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "protein",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -4550,7 +4574,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "carbohydrate",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -4569,7 +4593,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "fat",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -4588,7 +4612,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "protein source",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -4617,7 +4641,7 @@ ShallowWrapper {
               undefined,
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "kosher",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -4636,7 +4660,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "gluten free",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -4656,7 +4680,7 @@ ShallowWrapper {
               undefined,
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "lactose",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -4675,7 +4699,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "low residue",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -4825,14 +4849,16 @@ ShallowWrapper {
                     className="serving-size"
 >
                     Limitations
-                    : 
+                    :
+                     
                     Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.
 </span>,
                   <span
                     className="serving-size"
 >
                     Serving size
-                    : 
+                    :
+                     
                     * 1 scoop or packet
 </span>,
                 ],
@@ -4864,7 +4890,7 @@ ShallowWrapper {
                 "rendered": Array [
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "7 g*",
                     "nodeType": "host",
                     "props": Object {
                       "children": "7 g*",
@@ -4876,7 +4902,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "% Daily Value",
                     "nodeType": "host",
                     "props": Object {
                       "children": "% Daily Value",
@@ -4891,7 +4917,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Calories",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -4929,7 +4955,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Calories",
                     "nodeType": "host",
                     "props": Object {
                       "children": 25,
@@ -4940,7 +4966,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Calories",
                     "nodeType": "host",
                     "props": Object {
                       "children": "",
@@ -4954,7 +4980,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Fat",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -4994,7 +5020,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Fat",
                     "nodeType": "host",
                     "props": Object {
                       "children": "0 g",
@@ -5005,7 +5031,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Fat",
                     "nodeType": "host",
                     "props": Object {
                       "children": "0%",
@@ -5019,7 +5045,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Sodium",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -5059,7 +5085,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Sodium",
                     "nodeType": "host",
                     "props": Object {
                       "children": "15 mg",
@@ -5070,7 +5096,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Sodium",
                     "nodeType": "host",
                     "props": Object {
                       "children": "1%",
@@ -5084,7 +5110,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Potassium",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -5124,7 +5150,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Potassium",
                     "nodeType": "host",
                     "props": Object {
                       "children": "35 mg",
@@ -5135,7 +5161,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Potassium",
                     "nodeType": "host",
                     "props": Object {
                       "children": "2%",
@@ -5149,7 +5175,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Carbohydrate",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -5189,7 +5215,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Carbohydrate",
                     "nodeType": "host",
                     "props": Object {
                       "children": "0 g",
@@ -5200,7 +5226,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Carbohydrate",
                     "nodeType": "host",
                     "props": Object {
                       "children": "0%",
@@ -5214,7 +5240,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Protein",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -5252,7 +5278,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Protein",
                     "nodeType": "host",
                     "props": Object {
                       "children": "6 g",
@@ -5263,7 +5289,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Protein",
                     "nodeType": "host",
                     "props": Object {
                       "children": "",
@@ -5277,7 +5303,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Calcium",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -5315,7 +5341,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Calcium",
                     "nodeType": "host",
                     "props": Object {
                       "children": "",
@@ -5326,7 +5352,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "Calcium",
                     "nodeType": "host",
                     "props": Object {
                       "children": "2%",
@@ -5340,12 +5366,13 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Limitations",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
                     "Limitations",
-                    ": ",
+                    ":",
+                    " ",
                     "Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.",
                   ],
                   "className": "serving-size",
@@ -5353,19 +5380,21 @@ ShallowWrapper {
                 "ref": null,
                 "rendered": Array [
                   "Limitations",
-                  ": ",
+                  ":",
+                  " ",
                   "Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.",
                 ],
                 "type": "span",
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Serving size",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
                     "Serving size",
-                    ": ",
+                    ":",
+                    " ",
                     "* 1 scoop or packet",
                   ],
                   "className": "serving-size",
@@ -5373,7 +5402,8 @@ ShallowWrapper {
                 "ref": null,
                 "rendered": Array [
                   "Serving size",
-                  ": ",
+                  ":",
+                  " ",
                   "* 1 scoop or packet",
                 ],
                 "type": "span",
@@ -5684,14 +5714,16 @@ ShallowWrapper {
                                     className="serving-size"
                         >
                                     Limitations
-                                    : 
+                                    :
+                                     
                                     Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.
                         </span>
                         <span
                                     className="serving-size"
                         >
                                     Serving size
-                                    : 
+                                    :
+                                     
                                     * 1 scoop or packet
                         </span>
             </ul>
@@ -6023,14 +6055,16 @@ ShallowWrapper {
                                 className="serving-size"
                 >
                                 Limitations
-                                : 
+                                :
+                                 
                                 Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.
                 </span>
                 <span
                                 className="serving-size"
                 >
                                 Serving size
-                                : 
+                                :
+                                 
                                 * 1 scoop or packet
                 </span>
 </ul>,
@@ -6142,7 +6176,7 @@ ShallowWrapper {
               "rendered": Array [
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Increased protein requirements",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Increased protein requirements",
@@ -6238,7 +6272,7 @@ ShallowWrapper {
                 undefined,
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "caloric density",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -6257,7 +6291,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "protein",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -6276,7 +6310,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "carbohydrate",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -6295,7 +6329,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "fat",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -6314,7 +6348,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "protein source",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -6343,7 +6377,7 @@ ShallowWrapper {
                 undefined,
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "kosher",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -6362,7 +6396,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "gluten free",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -6382,7 +6416,7 @@ ShallowWrapper {
                 undefined,
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "lactose",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -6401,7 +6435,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "low residue",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -6551,14 +6585,16 @@ ShallowWrapper {
                       className="serving-size"
 >
                       Limitations
-                      : 
+                      :
+                       
                       Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.
 </span>,
                     <span
                       className="serving-size"
 >
                       Serving size
-                      : 
+                      :
+                       
                       * 1 scoop or packet
 </span>,
                   ],
@@ -6590,7 +6626,7 @@ ShallowWrapper {
                   "rendered": Array [
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "7 g*",
                       "nodeType": "host",
                       "props": Object {
                         "children": "7 g*",
@@ -6602,7 +6638,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "% Daily Value",
                       "nodeType": "host",
                       "props": Object {
                         "children": "% Daily Value",
@@ -6617,7 +6653,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Calories",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -6655,7 +6691,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Calories",
                       "nodeType": "host",
                       "props": Object {
                         "children": 25,
@@ -6666,7 +6702,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Calories",
                       "nodeType": "host",
                       "props": Object {
                         "children": "",
@@ -6680,7 +6716,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Fat",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -6720,7 +6756,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Fat",
                       "nodeType": "host",
                       "props": Object {
                         "children": "0 g",
@@ -6731,7 +6767,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Fat",
                       "nodeType": "host",
                       "props": Object {
                         "children": "0%",
@@ -6745,7 +6781,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Sodium",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -6785,7 +6821,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Sodium",
                       "nodeType": "host",
                       "props": Object {
                         "children": "15 mg",
@@ -6796,7 +6832,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Sodium",
                       "nodeType": "host",
                       "props": Object {
                         "children": "1%",
@@ -6810,7 +6846,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Potassium",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -6850,7 +6886,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Potassium",
                       "nodeType": "host",
                       "props": Object {
                         "children": "35 mg",
@@ -6861,7 +6897,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Potassium",
                       "nodeType": "host",
                       "props": Object {
                         "children": "2%",
@@ -6875,7 +6911,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Carbohydrate",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -6915,7 +6951,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Carbohydrate",
                       "nodeType": "host",
                       "props": Object {
                         "children": "0 g",
@@ -6926,7 +6962,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Carbohydrate",
                       "nodeType": "host",
                       "props": Object {
                         "children": "0%",
@@ -6940,7 +6976,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Protein",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -6978,7 +7014,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Protein",
                       "nodeType": "host",
                       "props": Object {
                         "children": "6 g",
@@ -6989,7 +7025,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Protein",
                       "nodeType": "host",
                       "props": Object {
                         "children": "",
@@ -7003,7 +7039,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Calcium",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
@@ -7041,7 +7077,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Calcium",
                       "nodeType": "host",
                       "props": Object {
                         "children": "",
@@ -7052,7 +7088,7 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "Calcium",
                       "nodeType": "host",
                       "props": Object {
                         "children": "2%",
@@ -7066,12 +7102,13 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Limitations",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
                       "Limitations",
-                      ": ",
+                      ":",
+                      " ",
                       "Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.",
                     ],
                     "className": "serving-size",
@@ -7079,19 +7116,21 @@ ShallowWrapper {
                   "ref": null,
                   "rendered": Array [
                     "Limitations",
-                    ": ",
+                    ":",
+                    " ",
                     "Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.",
                   ],
                   "type": "span",
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Serving size",
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
                       "Serving size",
-                      ": ",
+                      ":",
+                      " ",
                       "* 1 scoop or packet",
                     ],
                     "className": "serving-size",
@@ -7099,7 +7138,8 @@ ShallowWrapper {
                   "ref": null,
                   "rendered": Array [
                     "Serving size",
-                    ": ",
+                    ":",
+                    " ",
                     "* 1 scoop or packet",
                   ],
                   "type": "span",
