@@ -3,7 +3,6 @@ import { shallow } from 'enzyme';
 import { Load } from '../../Loader/Loader';
 import {DetailsCard, mapStateToProps, mapDispatchToProps} from '../DetailsCard.js';
 import { fetchSingleFormula } from '../../../thunks/fetchSingleFormula.js';
-import * as action from '../../../actions';
 
 jest.mock('../../../thunks/fetchSingleFormula');
 
