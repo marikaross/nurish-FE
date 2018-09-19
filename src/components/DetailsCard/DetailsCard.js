@@ -21,7 +21,6 @@ export class DetailsCard extends Component {
         formula: props.formula
       };
     }
-    return state 
   }
   
   async componentDidMount() {
