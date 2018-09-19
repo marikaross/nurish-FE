@@ -103,19 +103,24 @@
 .nutrient-headers {
   border-bottom: 1.5px solid #FFF;
   display: grid;
-  grid-template-columns: 30% 30% 20% 20%;
+  grid-auto-flow: dense;
+  grid-column-gap: 2.5%;
+  grid-template-columns: 20% 25% 25% 25%;
   margin-bottom: .2rem; }
 
 .nutrient-header-1 {
-  margin-left: 7rem;
-  text-align: center; }
+  grid-column: 2;
+  padding-right: .75rem;
+  text-align: right; }
 
 .nutrient-header-2 {
-  margin-left: 1rem;
+  grid-column: 3;
+  padding-right: .75rem;
   text-align: right; }
 
 .nutrient-header-3 {
-  margin-left: 1rem;
+  grid-column: 4;
+  padding-right: .75rem;
   text-align: right; }
 
 .nutrient-row {
