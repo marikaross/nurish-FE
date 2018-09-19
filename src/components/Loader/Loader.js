@@ -1,7 +1,7 @@
 import React from 'react'
 import { Dimmer, Loader, Segment } from 'semantic-ui-react'
 
-const Load = () => (
+export const Load = () => (
     <Segment>
       <Dimmer active inverted page>
         <Loader size='large'>Loading</Loader>
