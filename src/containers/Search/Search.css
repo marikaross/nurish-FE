@@ -1,3 +1,81 @@
+.app {
+  text-align: center; }
+
+.app .links {
+  animation: shrink-form 1s;
+  width: 25%; }
+
+@keyframes shrink-form {
+  0% {
+    width: 45%; }
+  100% {
+    width: 25%; } }
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  height: 250px;
+  margin: 0 auto;
+  min-width: 20rem;
+  padding: 1.5rem;
+  text-align: center;
+  width: 25%; }
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+.links a {
+  width: 75%; }
+
+.link-container {
+  display: flex;
+  justify-content: space-between; }
+
+.link-container a {
+  max-width: 10rem;
+  width: 30%; }
+
+a {
+  border-radius: 30px;
+  border: 1px solid #FFF;
+  color: #FFF;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  padding: .75rem 0;
+  text-decoration: none; }
+
+.nurish-logo {
+  text-align: center;
+  width: 25rem; }
+
+.initial-logo {
+  margin: 25vh 0 5vh; }
+
+.collapse-logo {
+  margin: 0 0 5vh;
+  animation: collapse-logo 1s; }
+
+@keyframes collapse-logo {
+  0% {
+    margin: 25vh 0 5vh; }
+  100% {
+    margin: 0 0 5vh; } }
+
+.expand-logo {
+  margin: 25vh 0 5vh;
+  animation: expand-logo 1s; }
+
+@keyframes expand-logo {
+  0% {
+    margin: 0 0 5vh; }
+  100% {
+    margin: 25vh 0 5vh; } }
+
+.ui.segment {
+  opacity: 0; }
+
 div .search-container {
   animation: grow-search 1s;
   min-width: 30rem;
@@ -18,6 +96,6 @@ div .search-container {
   width: 95%; }
 
 .search-field .ui .button {
-  background-color: #FFF;
+  background-color: #F89838;
   border-style: solid solid solid none;
   border: 1px solid rgba(34, 36, 38, 0.15); }
