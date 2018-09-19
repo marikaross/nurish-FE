@@ -13,26 +13,47 @@ describe('App', () => {
   let mockHasErrored
   let mockFetchFormula
   let mockAddFormulas
+  let mockAnimateLogo
 
 
   beforeEach(() => {
     mockFormulas = [{title: 'boost'}, { title: 'smoothie'}];
     mockFetchFormula = jest.fn();
     mockAddFormulas = jest.fn();
-    mockHasErrored = false
-    mockIsLoading = true
+    mockHasErrored = false;
+    mockIsLoading = true;
+    mockAnimateLogo = jest.fn();
 
     wrapper = shallow(<App
       formulas={mockFormulas}
       isLoading={mockIsLoading}
       hasErrored={mockHasErrored}
       fetchFormula={mockFetchFormula}
-      addFormulas={mockAddFormulas}/>)
+      addFormulas={mockAddFormulas}
+      animateLogo={mockAnimateLogo}/>)
   })
 
 
   it.skip('should match the snapShot', () => {
       expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should set the state to initialLogo when the case is collapse-logo', () => {
+    const result = wrapper.instance().animateLogo('collapse-logo');
+    const expected = wrapper.state({position: 'initial-logo'});
+    expect(result).toEqual(expected);
+  });
+
+  it('should set the state to initialLogo when the case is expand-logo', () => {
+    const result = wrapper.instance().animateLogo('expand-logo')
+    const expected = wrapper.state({position: 'initial-logo'})
+    expect(result).toEqual(expected)
+  });
+
+  it('should set the state to initialLogo when the case is collapse-logo', () => {
+    const result = wrapper.instance().animateLogo()
+    const expected = wrapper.state({position: 'expand-logo'})
+    expect(result).toEqual(expected)
   });
 
   it('should return a formulas array', () => {
