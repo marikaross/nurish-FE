@@ -9,11 +9,11 @@ import './Search.css';
 
 export class Search extends Component {
 	constructor() {
-		super()
+		super();
 
 		this.state = {
 			input: ''
-		}
+		};
 	}
 
 	handleSubmit = async (event) => {
@@ -37,15 +37,15 @@ export class Search extends Component {
 					<NavLink to='/formulas'>browse</NavLink>
 				</div>
 				<form className='search-field' onSubmit={this.handleSubmit}>
-			  	<Input 
-			  		action='Search'
-			  		onChange={(event) => this.handleInput(event.target.value)}
-			  		value={this.state.value}
-			  		placeholder='enter your criteria' 
-		  		/>
+        <Input 
+          action='Search'
+          onChange={(event) => this.handleInput(event.target.value)}
+          value={this.state.value}
+          placeholder='enter your criteria' 
+        />
 				</form>
 			</div>
-		)
+		);
 	}
 }
 
@@ -62,7 +62,8 @@ export const mapDispatchToProps = (dispatch) => ({
 
 Search.propTypes = {
   filterResults: PropTypes.array,
-  fetchResults: PropTypes.func
+  fetchResults: PropTypes.func,
+  history: PropTypes.object
 };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Search));
