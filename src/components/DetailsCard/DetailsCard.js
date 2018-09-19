@@ -154,9 +154,7 @@ export const mapDispatchToProps = (dispatch) => ({
 
 DetailsCard.propTypes = {
   fetchSingleFormula: PropTypes.func,
-  formula: PropTypes.object,
-  fetchSingleFormula: PropTypes.func
-
+  formula: PropTypes.object
 };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(DetailsCard));
