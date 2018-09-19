@@ -6,7 +6,7 @@ import { fetchSingleFormula } from '../../thunks/fetchSingleFormula.js';
 import PropTypes from 'prop-types';
 import './DetailsCard.css';
 
-class DetailsCard extends Component {
+export class DetailsCard extends Component {
   constructor() {
     super()
 
