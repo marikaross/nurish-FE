@@ -6,14 +6,23 @@
   width: 100%; }
 
 .formula-link {
-  height: 350px;
   margin: 5px;
   min-width: 20rem;
   width: 100%; }
 
 .formula-card h2 {
   font-size: 1.4rem;
-  text-align: left; }
+  text-align: left;
+  min-height: 50px; }
+
+.formula-card-image {
+  background-color: #FFF;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 135px;
+  margin-bottom: .5rem;
+  opacity: .8; }
 
 .formula-description .truncate-description {
   text-align: left;

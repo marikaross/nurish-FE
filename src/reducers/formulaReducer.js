@@ -9,6 +9,15 @@ export const formulaReducer = (state = [], action) => {
   }
 }
 
+export const singleFormulaReducer = (state = {}, action) => {
+  switch(action.type) {
+    case 'SINGLE_FORMULA_FETCH_DATA_SUCCESS':
+      return action.formula;
+    default:
+      return state;
+  }
+}
+
 export const isLoading = (state = false, action) => {
   switch (action.type) {
     case 'IS_LOADING':
