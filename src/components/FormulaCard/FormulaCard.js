@@ -14,10 +14,14 @@ export const FormulaCard = (formula) => {
     });
   };
 
+  let url = `https://raw.githubusercontent.com/shebesabrina/Nurish-BE/images/public/formula%20images/${formula.image}`
+
   return (
     <Link className='formula-link' to={`/formulas/${formula.id}`}>
       <div className='formula-card' key={`formula-card-${formula.id}`}>
         <h2>{formula.title}</h2>
+        <div className='formula-card-image' alt=''style={ { backgroundImage: `url(${url})` } }>
+        </div>
         <div className='formula-description'>
           <p className='truncate-description'>{formula.description}</p>
         </div>
