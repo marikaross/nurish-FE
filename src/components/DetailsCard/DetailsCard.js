@@ -21,18 +21,17 @@ export class DetailsCard extends Component {
         formula: props.formula
       };
     }
-    return state 
   }
   
   async componentDidMount() {
     let id = new URL(window.location.href);
     let url = `https://nurish-app.herokuapp.com/api/v1${id.pathname}`
     await this.props.fetchSingleFormula(url);
-    this.props.animateLogo('collapse-logo')
+    this.props.animateLogo('collapse-logo');
   }
 
   componentWillUnmount() {
-    this.props.animateLogo('expand-logo')
+    this.props.animateLogo('expand-logo');
   }
 	
 	usageGuidelines = () => {

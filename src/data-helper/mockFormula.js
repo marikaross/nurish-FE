@@ -57,3 +57,74 @@ export const oneFormula = [
     "restrictions": ["CONTAINS MILK AND SOY"]
   }
 ]
+
+export const mockFormula = {
+  description: "Beneprotein instant protein powder is a modular whey protein source. Each 7 g serving provides 6 g of protein. It can be added to most foods, liquids and as a protein flush with tube feedings",
+  formula_overview: {
+    "id": 1,
+    "caloric_density": "25 Cal/7 g",
+    "protein": "100%",
+    "carbohydrate": "0%",
+    "fat": "0%",
+    "protein_source": "whey protein isolate (milk)",
+    "carbohydrate_source": null,
+    "fat_source": null,
+    "sucralose": null,
+    "dietary_fibre": null,
+    "fibre_source": null,
+    "n6n3_ratio": null,
+    "mct_lct": null,
+    "omega_3_fatty_acids": null,
+    "water_content": null,
+    "osmolality": null,
+    "kosher": "Y",
+    "gluten_free": "Y",
+    "lactose_free": null,
+    "lactose": "<0.5g/7g serving (not for patients with galactosemia",
+    "low_residue": "Y",
+    "formula_id": 1
+  },
+  hcpc: "B4155",
+  id1: '',
+  image: "Beneprotein.png",
+  ingredients: "WHEY PROTEIN ISOLATE (MILK), SOY LECITHIN",
+  nutritional_content: {
+    "id": 1,
+    "formula_id": 1,
+    "properties": {
+      "Calories": {
+        "7 g*": 25,
+        "% Daily Value": ""
+      },
+      "Fat": {
+        "7 g*": "0 g",
+        "% Daily Value": "0%"
+      },
+      "Sodium": {
+        "7 g*": "15 mg",
+        "% Daily Value": "1%"
+      },
+      "Potassium": {
+        "7 g*": "35 mg",
+        "% Daily Value": "2%"
+      },
+      "Carbohydrate": {
+        "7 g*": "0 g",
+        "% Daily Value": "0%"
+      },
+      "Protein": {
+        "7 g*": "6 g",
+        "% Daily Value": ""
+      },
+      "Calcium": {
+        "7 g*": "",
+        "% Daily Value": "2%"
+      },
+      "Limitations": "Not a significant source of saturated fat, trans fat, cholesterol, fibre, sugars, vitamin A, vitamin C, or iron.",
+      "Serving size": "* 1 scoop or packet"
+    }
+  },
+  restrictions: "CONTAINS MILK AND SOY",
+  title: "Beneprotein",
+  usage: "Increased protein requirements"
+}
