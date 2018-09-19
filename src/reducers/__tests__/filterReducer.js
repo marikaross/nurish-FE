@@ -5,7 +5,7 @@ describe('filterReducer', () => {
 
   it('should return the initial state when the action is undefined', () => {
     const expected = [];
-    const result = filterReducer([], {});
+    const result = filterReducer(undefined, {});
     expect(result).toEqual(expected);
   });
 
