@@ -3,10 +3,12 @@
 exports[`Search should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <withRouter(Search)
+  Symbol(enzyme.__unrendered__): <Search
+    fetchResults={[Function]}
     handleChange={[Function]}
     handleInput={[Function]}
     handleSubmit={[Function]}
+    history={Array []}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -19,25 +21,325 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": Array [
+        <div
+          className="link-container"
+>
+          <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    to="/"
+          >
+                    back
+          </NavLink>
+          <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    to="/filter"
+          >
+                    filter
+          </NavLink>
+          <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    to="/formulas"
+          >
+                    browse
+          </NavLink>
+</div>,
+        <form
+          className="search-field"
+          onSubmit={[Function]}
+>
+          <Input
+                    action="Search"
+                    onChange={[Function]}
+                    placeholder="enter your criteria"
+                    type="text"
+                    value={undefined}
+          />
+</form>,
+      ],
+      "className": "form-container search-container",
     },
     "ref": null,
-    "rendered": [Function],
-    "type": [Function],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/"
+>
+              back
+</NavLink>,
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/filter"
+>
+              filter
+</NavLink>,
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/formulas"
+>
+              browse
+</NavLink>,
+          ],
+          "className": "link-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": "back",
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": "back",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": "filter",
+              "to": "/filter",
+            },
+            "ref": null,
+            "rendered": "filter",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": "browse",
+              "to": "/formulas",
+            },
+            "ref": null,
+            "rendered": "browse",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Input
+            action="Search"
+            onChange={[Function]}
+            placeholder="enter your criteria"
+            type="text"
+            value={undefined}
+/>,
+          "className": "search-field",
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "action": "Search",
+            "onChange": [Function],
+            "placeholder": "enter your criteria",
+            "type": "text",
+            "value": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "form",
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": Array [
+          <div
+            className="link-container"
+>
+            <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        to="/"
+            >
+                        back
+            </NavLink>
+            <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        to="/filter"
+            >
+                        filter
+            </NavLink>
+            <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        to="/formulas"
+            >
+                        browse
+            </NavLink>
+</div>,
+          <form
+            className="search-field"
+            onSubmit={[Function]}
+>
+            <Input
+                        action="Search"
+                        onChange={[Function]}
+                        placeholder="enter your criteria"
+                        type="text"
+                        value={undefined}
+            />
+</form>,
+        ],
+        "className": "form-container search-container",
       },
       "ref": null,
-      "rendered": [Function],
-      "type": [Function],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/"
+>
+                back
+</NavLink>,
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/filter"
+>
+                filter
+</NavLink>,
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/formulas"
+>
+                browse
+</NavLink>,
+            ],
+            "className": "link-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": "back",
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "back",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": "filter",
+                "to": "/filter",
+              },
+              "ref": null,
+              "rendered": "filter",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": "browse",
+                "to": "/formulas",
+              },
+              "ref": null,
+              "rendered": "browse",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Input
+              action="Search"
+              onChange={[Function]}
+              placeholder="enter your criteria"
+              type="text"
+              value={undefined}
+/>,
+            "className": "search-field",
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "action": "Search",
+              "onChange": [Function],
+              "placeholder": "enter your criteria",
+              "type": "text",
+              "value": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "form",
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

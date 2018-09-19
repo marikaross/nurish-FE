@@ -8,9 +8,12 @@ export const specialties = [
 ];
 
 export const allergies = [
-	{ key: 'Gluten', value: 'Wheat', text: 'Wheat and/or Gluten'},
+	{ key: 'Casein', value: 'Casein', text: 'Casein'},
 	{ key: 'Corn', value: 'Corn', text: 'Corn'}, 
-	{ key: 'Soy', value: 'Soy', text: 'Soy'}
+	{ key: 'Dairy', value: 'Dairy', text: 'Dairy'}, 
+	{ key: 'Gluten', value: 'Wheat', text: 'Wheat and/or Gluten'},
+	{ key: 'Soy', value: 'Soy', text: 'Soy'},
+	{ key: 'Whey', value: 'Whey', text: 'Whey'}
 ];
 
 export const mctSplit = [

@@ -14,7 +14,7 @@ export const FormulaCard = (formula) => {
     });
   };
 
-  let url = `https://raw.githubusercontent.com/shebesabrina/Nurish-BE/images/public/formula%20images/${formula.image}`
+  let url = `/images/${formula.image}`
 
   return (
     <Link className='formula-link' to={`/formulas/${formula.id}`}>
