@@ -167,7 +167,6 @@ export const mapDispatchToProps = dispatch => ({
 DetailsCard.propTypes = {
   fetchSingleFormula: PropTypes.func,
   animateLogo: PropTypes.func,
-  history: PropTypes.object,
   formula: PropTypes.object
 };
 
