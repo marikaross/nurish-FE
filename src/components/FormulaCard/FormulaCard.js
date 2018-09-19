@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import './FormulaCard.css';
 
 export const FormulaCard = (formula) => {
-
   const usageGuidelines = () => {
     let usageArray = formula.usage.split(',')
     return usageArray.map(usage => {
@@ -40,5 +39,6 @@ FormulaCard.propTypes = {
   id: PropTypes.number,
   title: PropTypes.string,
   description: PropTypes.string,
-  usage: PropTypes.array
+  usage: PropTypes.string,
+  image: PropTypes.string,
 };

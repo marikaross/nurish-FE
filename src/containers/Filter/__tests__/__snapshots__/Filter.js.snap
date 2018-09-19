@@ -16,6 +16,7 @@ ShallowWrapper {
           ]
     }
     hasErrored={false}
+    history={Array []}
     isLoading={true}
     mockAddFilterResults={[Function]}
 />,
