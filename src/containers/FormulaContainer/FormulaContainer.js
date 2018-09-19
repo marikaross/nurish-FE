@@ -16,7 +16,7 @@ export class FormulaContainer extends Component {
   }
 
   filterResultCard = () => {
-    return this.props.filterResults.map(formula => {
+    return this.props.filterResults.map((formula) => {
         return (
           <FormulaCard
             key={formula.id}
@@ -37,8 +37,6 @@ export class FormulaContainer extends Component {
     })
   }
 
-
-
   render() {
   	return (
   		<div className='form-container formula-container'>
@@ -55,11 +53,6 @@ export class FormulaContainer extends Component {
   }
 }
 
-FormulaContainer.propTypes = {
-  filterResults: PropTypes.array,
-  formulas: PropTypes.array,
-  animateLogo: PropTypes.func
-};
 
 export const mapStateToProps = (state) => ({
   formulas: state.formulas,
@@ -67,8 +60,9 @@ export const mapStateToProps = (state) => ({
 });
 
 FormulaContainer.propTypes = {
-  formulas: PropTypes.arr,
-  filterResults: PropTypes.arr
+  filterResults: PropTypes.array,
+  formulas: PropTypes.array,
+  animateLogo: PropTypes.func
 };
 
 export default withRouter(connect(mapStateToProps, null)(FormulaContainer));
