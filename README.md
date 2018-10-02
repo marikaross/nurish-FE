@@ -52,7 +52,7 @@ Run ```bundle install``` from the root directory
 Set-Up the Database ```rake db:{create,migrate,seed}```
 Run ```rails s``` from the root directory
 
-## Test Driven Development
+## Testing
 Nurish uses Jest and Enzyme for front-end testing and RSpec for back-end testing
 
 Run with ```npm test```  or ```rspec``` from the associated root directory
