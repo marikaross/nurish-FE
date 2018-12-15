@@ -1,0 +1,7 @@
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+.links a {
+  width: 75%; }
