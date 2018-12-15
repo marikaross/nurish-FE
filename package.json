@@ -21,6 +21,8 @@
     "semantic-ui-react": "^0.82.4"
   },
   "scripts": {
+    "build:langs": "NODE_ENV='production' babel-node scripts/mergeMessages.js",
+    "build": "npm run build:langs && node scripts/build.js",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
@@ -32,6 +34,7 @@
     "eslint": "./node_modules/eslint/bin/eslint.js ./src/**/**/*.js"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "webpack-dev-server": "^3.1.10"
