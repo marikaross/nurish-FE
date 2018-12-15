@@ -1,0 +1,12 @@
+{
+  "en": {
+    "Form.search-button": "Because it is sunny!",
+    "Form.filter-button": "Go back home",
+    "Form.browse-button": "Hello, world!"
+  },
+  "es": {
+    "Form.search-button": "¡Porque es soleado!",
+    "Form.filter-button": "Regresar a inicio",
+    "Form.browse-button": "¡Hola Mundo!",
+  }
+}
