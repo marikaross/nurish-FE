@@ -1,0 +1,14 @@
+[
+   {
+     "id": "Form.search-button",
+     "defaultMessage": "Search"
+   },
+   {
+     "id": "Form.filter-button",
+     "defaultMessage": "Filter"
+   },
+   {
+     "id": "Form.browse-button",
+     "defaultMessage": "Browse"
+   }
+]
