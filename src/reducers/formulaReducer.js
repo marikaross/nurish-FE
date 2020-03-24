@@ -1,5 +1,5 @@
 export const formulaReducer = (state = [], action) => {
-  switch(action.type) {
+  switch (action.type) {
     case 'ADD_FORMULAS':
       return [...state, ...action.formulas];
     case 'FORMULA_FETCH_DATA_SUCCESS':
@@ -7,16 +7,16 @@ export const formulaReducer = (state = [], action) => {
   default:
     return state;
   }
-}
+};
 
 export const singleFormulaReducer = (state = {}, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case 'SINGLE_FORMULA_FETCH_DATA_SUCCESS':
       return action.formula;
     default:
       return state;
   }
-}
+};
 
 export const isLoading = (state = false, action) => {
   switch (action.type) {
@@ -25,7 +25,7 @@ export const isLoading = (state = false, action) => {
     default:
       return state;
   }
-}
+};
 
 export const hasErrored = (state = false, action) => {
   switch (action.type) {
@@ -34,4 +34,4 @@ export const hasErrored = (state = false, action) => {
     default:
       return state;
   }
-}
+};
