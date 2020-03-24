@@ -22,12 +22,21 @@ div {
 }
 
 .filter-form {
+	animation: grow-form 1s;
 	display: flex;
 	flex-direction: column;
 	height: 270px;
 	justify-content: space-evenly;
 	margin: 1rem auto;
 	width: 95%;
+	@keyframes grow-form {
+		0% {
+			height: 200px;
+		}
+		100% {
+			height: 270px;
+		}
+	}
 }
 
 .filter-form {

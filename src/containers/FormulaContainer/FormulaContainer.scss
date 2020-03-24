@@ -1,7 +1,7 @@
 .formula-cards {
-	grid-column-gap: 3%;
-	margin: 2rem auto;
-	width: 95%;
+  grid-column-gap: 3%;
+  margin: 2rem auto;
+  width: 95%;
   display: grid;
   grid-row-gap: 20px;
   grid-template-columns: 32% 32% 32%;
@@ -9,38 +9,46 @@
 }
 
 div {
-	& .formula-container {
-		animation: grow-container 1s;
-		height: fit-content;
-		margin: 0 auto 5rem;
-		max-width: 70rem;
-		width: 85%;
-		@keyframes grow-container {
-  
-	  	0% {
-	  	  width: 25%;
-	  	}
-	  
-	  	100% {
-	    	width: 85%;
-	  	}
-		}
-	}	
-}
+  & .formula-container {
+    animation: grow-container 1s;
+    height: fit-content;
+    margin: 0 auto 5rem;
+    max-width: 70rem;
+    width: 85%;
+    @keyframes grow-container {
+      0% {
+        width: 25%;
+      }
 
-@media screen and (max-width: 1100px) {
-
-.formula-cards {
-  grid-column-gap: 5%;
-  grid-template-columns: 45% 45%; 
+      100% {
+        width: 85%;
+      }
+    }
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1100px) {
+  .formula-cards {
+    grid-column-gap: 5%;
+    grid-template-columns: 45% 45%;
+  }
+}
 
-.formula-cards {
-  grid-column-gap: 5%;
-  grid-template-columns: 95%; 
+@media screen and (max-width: 850px) {
+  .formula-cards {
+    grid-column-gap: 5%;
+    grid-template-columns: 95%;
     max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  div {
+    & .formula-container {
+      margin: 0 auto;
+      max-width: 70rem;
+      width: 100%;
+      padding: 0.25rem;
+    }
   }
 }

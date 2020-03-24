@@ -1,19 +1,22 @@
-import {isLoading, hasErrored, filterResultFetchDataSuccess} from '../actions';
+import {
+  isLoading,
+  hasErrored,
+  filterResultFetchDataSuccess
+} from "../actions";
 
-
-export const fetchResults = (url) => {
-  return async (dispatch) => {
+export const fetchResults = url => {
+  return async dispatch => {
     try {
-      dispatch(isLoading(true))
-      const response = await fetch(url)
+      dispatch(isLoading(true));
+      const response = await fetch(url);
       if (!response.ok) {
-        throw Error (response.statusText)
+        throw Error(response.statusText);
       }
-      dispatch(isLoading(false))
-      const result = await response.json()
-      dispatch(filterResultFetchDataSuccess(result))
+      dispatch(isLoading(false));
+      const result = await response.json();
+      dispatch(filterResultFetchDataSuccess(result));
     } catch (error) {
-      dispatch(hasErrored(true))
+      dispatch(hasErrored(true));
     }
-  }
-}
+  };
+};
