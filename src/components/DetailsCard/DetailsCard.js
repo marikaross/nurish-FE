@@ -18,7 +18,7 @@ export class DetailsCard extends Component {
       return {
         formula: props.formula
       };
-    }
+    } else return state;
   }
 
   async componentDidMount() {
@@ -44,7 +44,7 @@ export class DetailsCard extends Component {
         let regex = /_/gi;
         let featureName = feature.replace(regex, " ");
         return (
-          <li key={featureName}> 
+          <li key={featureName}>
             {featureName}: {this.state.formula.formula_overview[feature]}
           </li>
         );
@@ -61,7 +61,11 @@ export class DetailsCard extends Component {
     );
     return headers.map((nutrientHeader, index) => {
       let className = `nutrient-header-${index + 1}`;
-      return <span className={className} key={nutrientHeader}>{nutrientHeader}</span>;
+      return (
+        <span className={className} key={nutrientHeader}>
+          {nutrientHeader}
+        </span>
+      );
     });
   };
 
@@ -167,12 +171,10 @@ export const mapDispatchToProps = dispatch => ({
 DetailsCard.propTypes = {
   fetchSingleFormula: PropTypes.func,
   animateLogo: PropTypes.func,
-  formula: PropTypes.object
+  formula: PropTypes.object,
+  history: PropTypes.object
 };
 
 export default withRouter(
-  connect(
-    mapStateToProps,
-    mapDispatchToProps
-  )(DetailsCard)
+  connect(mapStateToProps, mapDispatchToProps)(DetailsCard)
 );
