@@ -78,7 +78,6 @@ a {
 
 div .search-container {
   animation: grow-search 1s;
-  min-width: 30rem;
   width: 45%; }
 
 @keyframes grow-search {
@@ -88,6 +87,7 @@ div .search-container {
     width: 45%; } }
 
 .search-field {
+  animation: grow-search-field 1s;
   display: flex;
   flex-direction: column;
   height: 150px;
@@ -95,7 +95,17 @@ div .search-container {
   margin: 1rem auto;
   width: 95%; }
 
+@keyframes grow-search-field {
+  0% {
+    width: 65%; }
+  100% {
+    width: 95%; } }
+
 .search-field .ui .button {
-  background-color: #FFF;
+  background-color: #fff;
   border-style: solid solid solid none;
   border: 1px solid rgba(34, 36, 38, 0.15); }
+
+@media screen and (max-width: 850px) {
+  div .search-container {
+    min-width: 30rem; } }
