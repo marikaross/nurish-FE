@@ -1,18 +1,18 @@
-import {isLoading, hasErrored, formulaFetchDataSuccess} from '../actions';
+import { isLoading, hasErrored, formulaFetchDataSuccess } from "../actions";
 
-export const fetchFormula = (url) => {
-  return async (dispatch) => {
+export const fetchFormula = url => {
+  return async dispatch => {
     try {
-      dispatch(isLoading(true))
-      const response = await fetch(url)
+      dispatch(isLoading(true));
+      const response = await fetch(url);
       if (!response.ok) {
-        throw Error (response.statusText)
+        throw Error(response.statusText);
       }
-      dispatch(isLoading(false))
-      const result = await response.json()
-      dispatch(formulaFetchDataSuccess(result))
+      dispatch(isLoading(false));
+      const result = await response.json();
+      dispatch(formulaFetchDataSuccess(result));
     } catch (error) {
-      dispatch(hasErrored(true))
+      dispatch(hasErrored(true));
     }
-  }
-}
+  };
+};
